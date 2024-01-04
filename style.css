@@ -1,0 +1,764 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}html{box-sizing:border-box}*,::after,::before{box-sizing:inherit}img,video{width:100%;vertical-align:middle;}
+
+/* FONT */
+@font-face {
+    font-family: americana regular;
+    src: url(./font/Americana\ Font\ Regular/);
+    font-weight: regular;
+    /* font-weight: bold; */
+}
+
+:root{
+
+    /* Couleur vert (principale) */
+    --vertFonce: #172A23;
+    --vertFonceMoin: #243b32;
+    --vertMoyen: #3A5D4D;
+    --vertClair: #EBF2ED;
+
+    /* Couleur vert (secondaire) */
+    --vertFonceTransparent: #65736D;
+    --vertNavTrait:#D4DFD7;
+}
+
+
+
+
+
+/* -------------- NAVIGATION (event.php) -------------- */
+nav{
+    /* padding: 30px 70px; */
+    border-bottom: solid 1px var(--vertNavTrait);
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 70px;
+
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    color: var(--vertMoyen);
+    
+}
+
+.navigation div{
+    margin-left: 30px;
+}
+
+#recherche{
+    width: 500px;
+    height: 30px;
+    border: solid 1px var(--vertFonce);
+}
+
+#recherche::placeholder{
+    text-align: end;
+    color: var(--vertFonce);
+    opacity: 0.5;
+    padding-right: 8px;
+}
+
+.trait1{
+    width: 45px;
+    height: 3px;
+    background-color: var(--vertFonceMoin);
+    margin-bottom: 8px;
+}
+
+.trait2{
+    width: 45px;
+    height: 3px;
+    background-color: var(--vertFonceMoin);
+    margin-top: 8px;
+}
+
+
+/* -------------- PAGE EVENT (event.php) -------------- */
+/* --- GENERAL --- */
+.site{
+    display: grid;
+    /* grid-template-columns: repeat(1fr 2fr); */
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 40% auto;
+    grid-template-areas: 
+    "gauche droite";
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+
+
+/* --- GAUCHE --- */
+.gauche{
+    grid-area: gauche;
+    background-color: var(--vertFonce);
+    position: fixed;
+    width: 40%;
+    height: 100%;
+}
+
+.gaucheImg{
+    grid-area: gauche;
+    background-image: url(./img/calamar.JPG);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+
+/* --- DROITE --- */
+.droite {
+    grid-area: droite;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.containerDroit{
+    width: 730px;
+    /* width: 750px; */
+}
+
+/* Encadré - Etat de l'event */
+.bgEtat{
+    background-color: var(--vertClair);
+    height: 75px;
+    width: 592px;
+    display: flex;
+    margin: auto;
+}
+
+.borderEtat{
+    text-align: center;
+    border: solid 2px var(--vertFonceTransparent);
+    height: 59px;
+    width: 685px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Texte - Etat de l'event */
+
+.etat{
+    font-size: 16px;
+    color: var(--vertFonceTransparent);
+    font-family: americana regular;
+}
+
+.msgEtat{
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.etatContacter{
+    font-size: 16px;
+    color: var(--vertFonceTransparent);
+    text-decoration: underline;
+    font-family: americana regular;
+}
+
+/* image produit */
+.imgEvent{
+    background-color: var(--vertFonce);
+    margin: auto;
+    margin-bottom: 60px;
+    width: 298px;
+    height: 447px;
+    /* width: 470px;
+    height: 700px; */
+}
+
+
+/* Fiche produit */
+.droite h1{
+    font-family: americana regular;
+    color: var(--vertMoyen);
+    font-size: 60px;
+    /* font-size: 72px; */
+    text-align: center;
+    margin-top: 60px;
+    padding: 0 51px;
+}
+
+.droite h2{
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    color: var(--vertFonce);
+    font-size: 21px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.droite h3{
+    font-family: americana regular;
+    color: var(--vertMoyen);
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.droite h4{
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: americana regular;
+    color: var(--vertFonceMoin);
+}
+
+.droite h4+p{
+    margin-bottom: 40px;
+}
+
+
+/* --- Fiche event - Texte --- */
+.droite p{
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    line-height: 23px;
+    /* font-style: italic; */
+    color: var(--vertFonce);
+}
+
+/* .containerDroit .statePlace{
+    font-weight: 300;
+
+} */
+
+.containerDroit .dateEvent{
+    font-weight: 300;
+}
+
+.statePlace span{
+    font-weight: 300;
+}
+
+.place_prix{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* --- SELECT  - Nbr de place---  */
+#place{
+    width: 35px;
+    height: 30px;
+    border: solid 1px #172A23;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+  }
+
+.prixSelect{
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200; 
+}
+
+.prixSelect::after{
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;  
+}
+
+
+.prixSelect select{
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    text-align: center;
+
+    /* Reset Select */
+    appearance: none;
+
+    /* Personalize */
+    cursor: pointer;
+    /* background-color: var(--vertClair); */
+    border-color: var(--vertNavTrait);
+}
+
+
+.prix p{
+    font-family: americana regular;
+    font-size: 22px;
+    color: var(--vertFonceMoin);
+}
+
+/* Bouton */
+.reserve{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    width: 380px;
+    height: 40px;
+    color: var(--vertClair);
+    background-color: var(--vertFonce);
+    border: none;
+}
+
+/* Zone catégorie */
+
+.trioCategory{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trioCategory article{
+    width: 210px;
+}
+
+.imgCategory{
+    width: 200px;
+    height: 300px;
+    background-color: var(--vertFonce);
+}
+
+.titreCategory{
+    font-family: americana regular;
+    font-size: 24px;
+    color: var(--vertMoyen);
+    margin-top: 10px;
+}
+
+.sousTitreCategory{
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    /* font-style: italic; */
+    color: var(--vertFonce);
+    margin-top: 5px;
+}
+
+/* ------------ PAGE LIST BOOK - DEBUT ------------ */
+.lb_event{
+    border-top: solid 1px var(--vertFonce);
+    /* border-bottom: solid 1px var(--vertFonce);  */
+    max-width: 1095px;
+    margin: auto;
+    padding: 8px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -- IMAGE EN BACKGROUND (list_book.php) -- */
+.lb_imageEvent{
+    background-image: url(./img/coco2.JPG);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 158px;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    
+}
+
+#lb_imageEvent_1{
+    background-image: url(./img/calamar.JPG);
+}
+
+
+/* -- TEXTE - titre, catégorie,numéro, date (list_book.php) -- */
+
+.lb_eventContainer{
+    display: flex;
+    margin-top: 30px;
+    width: 315px;
+}
+
+.lb_numeroEvent{
+    font-family: americana regular;
+    font-size: 21px;
+    color: var(--vertMoyen);
+    padding: 5px;
+}
+
+.lb_titre{
+    font-family: americana regular;
+    font-size: 45px;
+    color: var(--vertMoyen);
+    margin-bottom: 10px;
+}
+
+.lb_categoryDate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lb_category,
+.lb_date{
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    color: var(--vertMoyen);
+    margin-bottom: 5px;
+}
+
+.lb_category{
+    margin-bottom: 10px;
+}
+
+
+/* BOUTON CONSULTER ET TELECHARGEMENT BILLET (list_book.php) */
+.lb_reservation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 36px;
+    
+}
+
+.lb_reservation a{
+    text-decoration: none;
+
+}
+
+.lb_billet,
+.lb_consulter{
+    display: block;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    border: solid 1px var(--vertFonce);
+    width: 265px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    
+}
+
+.lb_billet{
+    color: var(--vertFonce);
+}
+
+
+.lb_consulter{
+    color: var(--vertClair);
+    background-color: var(--vertFonce);
+}
+
+/* ------------ PAGE LIST BOOK - FIN ------------ */
+
+@media screen and (max-width:1400px) {
+    .containerDroit {
+        width: 500px;
+        padding: 0 30px;
+    }
+
+    .bgEtat {
+        width: 460px;
+    }
+
+    .categoryTrois{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:900px) {
+
+    /* NAV */
+    #recherche {
+        width: 230px;
+    }
+
+    /* MAIN */
+    .site{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gauche"
+        "droite";
+    }
+
+    /* GAUCHE */
+    .gauche{
+        width: 100%;
+        height: 100%;
+    }
+
+    .gaucheImg {
+        width: 100%;
+    }
+
+
+    /* DROITE */
+    .droite{
+        position: absolute;
+        top: 30%;
+        background-color: white;
+    }
+
+    .containerDroit {
+        width: 100%;
+        padding: 45px 30px;
+    }
+
+    /* SECTION CATEGORIE */
+    .categoryTrois{
+        display: block;
+    }
+
+    .trioCategory article {
+        width: 200px;
+    }
+
+    /* ------------ PAGE LIST BOOK (max-width:900px) - DEBUT ------------ */
+
+    .lb_event{
+        border-top: solid 1px var(--vertFonce);
+        border-bottom: solid 1px var(--vertFonce); 
+        width: 100%;
+        margin: auto;
+        padding: 20px 30px;
+        display: block;
+    }
+
+    /* -- IMAGE EN BACKGROUND (list_book.php) -- */
+    .lb_imageEvent{
+        background-image: url(./img/coco2.JPG);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+        background-position: center;
+        position: relative;
+        background-size: cover;
+        
+    }
+    
+
+    /* -- TEXTE - titre, catégorie,numéro, date (list_book.php) -- */
+
+    .lb_eventContainer{
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .lb_numeroEvent{
+        font-family: americana regular;
+        font-size: 21px;
+        color: var(--vertMoyen);
+        padding: 5px;
+    }
+    
+    .lb_titre{
+        font-family: americana regular;
+        font-size: 45px;
+        color: var(--vertMoyen);
+        margin-bottom: 10px;
+    }
+
+    
+    .lb_categoryDate{
+        display: block;
+    }
+    
+    .lb_category,
+    .lb_date{
+        font-size: 21px;
+        font-family: 'Karla', sans-serif;
+        font-weight: 300;
+        color: var(--vertMoyen);
+        margin-bottom: 5px;
+    }
+
+    .lb_category{
+        margin-bottom: 10px;
+    }
+    
+
+    /* BOUTON CONSULTER ET TELECHARGEMENT BILLET (list_book.php) */
+    .lb_reservation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .lb_reservation a{
+        text-decoration: none;
+
+    }
+
+    .lb_billet,
+    .lb_consulter{
+        display: block;
+        font-size: 21px;
+        font-family: 'Karla', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        border: solid 1px var(--vertFonce);
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+
+    .lb_billet{
+        color: var(--vertFonce);
+    }
+
+    .lb_consulter{
+        color: var(--vertClair);
+        background-color: var(--vertFonce);
+    }
+
+    /* ------------ PAGE LIST BOOK (max-width:900px) - FIN ------------ */
+    
+}
+
+
+@media screen and (max-width:700px) {
+
+    /* NAV */
+    #recherche {
+        display: none;
+    }
+
+    nav {
+        padding: 0 25px;
+    }
+
+    /* DROITE */
+
+    .droite h1 {
+        font-size: 40px;
+    }
+
+    .droite h3{
+        display: none;
+    }
+    .droite{
+        top: 70%;
+    }
+
+    .containerDroit {
+        width: 100%;
+        padding: 45px 30px;
+    }
+
+    .bgEtat {
+        width: 335px;
+    }
+
+    .droite p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* bouton réservé */
+    .reserve {
+        width: 295px;
+    }
+
+    /* SECTION CATEGORIE */
+    
+
+    .trioCategory article {
+        display: none;
+    }
+
+    /* ------------ PAGE LIST BOOK (max-width:700px) - DEBUT ------------ */
+
+    /* -- IMAGE EN BACKGROUND (list_book.php) -- */
+    .lb_imageEvent{
+        background-image: url(./img/coco2.JPG);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 350px;
+    }
+
+    /* ------------ PAGE LIST BOOK (max-width:700px) - FIN ------------ */
+    
+}
+
+@media screen and (max-width:415px){
+
+    /* ------------ PAGE EVENT (max-width:415px) - DEBUT ------------ */
+    /* NAV */
+    nav {
+        height: 50px;
+    }
+
+    .navigation div {
+        margin-left: 15px;
+    }
+
+    .site {
+        padding-top: 50px;
+    }
+
+    .bgEtat {
+        width: 300px;
+    }
+
+    /* DROIT */
+    .containerDroit {
+        width: 100%;
+        padding: 45px 25px;
+    }
+
+    /* BOUTON DE RESERVATION */
+    .reserve {
+        width: 265px;
+    }
+    /* ------------ PAGE EVENT (max-width:415px) - FIN ------------ */
+
+
+    
+    /* ------------ PAGE LIST BOOK (max-width:415px) - DEBUT ------------ */
+    
+
+    /* -- IMAGE EN BACKGROUND (list_book.php) -- */
+    .lb_imageEvent{
+        height: 278px; 
+    }
+    /* .lb_bgImageEvent{
+        background-color: var(--vertFonce);
+        width: 100%;
+        height: 278px;
+        position: absolute;
+        top: 0;
+        opacity: 0.5;
+        
+    } */
+
+    /* -- IMAGE EN DUR (list_book.php) -- */
+    /* .lb_imageEvent{
+        background-color: var(--vertFonce);
+        width: 100%;
+        height: 278px;
+        overflow: hidden;
+        
+    }
+    .lb_imageEvent img{
+        background-color: var(--vertFonce);
+        max-width: 100%;
+        height: auto;
+        opacity: 0.5;
+        
+    } */
+
+
+    /* ------------ PAGE LIST BOOK (max-width:415px) - FIN ------------ */
+}
