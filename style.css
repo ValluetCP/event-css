@@ -353,11 +353,45 @@ select::-ms-expand {
 }
 
 /* ------------ PAGE LIST BOOK - DEBUT ------------ */
+.lb_container{
+    max-width: 1095px;
+    margin: auto;
+    padding-top: 136px;
+    padding-bottom: 50px;
+}
+
+/* -- BOUTON FILTRE (list_book.php) -- */
+.filtreCategory {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.lb_selectFiltre{
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    color: var(--vertMoyen);
+}
+
+.lb_filtre{
+    border: none;
+    background-color: var(--vertFonce);
+    color: var(--vertClair);
+    padding: 5px 35px;
+}
+
+#lb_categoryFiltre{
+    width: 198px;
+    height: 30px;
+    border: solid 1px #172A23;
+    text-align: center;
+    color: var(--vertMoyen);
+}
+
+/* -- LISTE DES RESERVATIONS (list_book.php) -- */
 .lb_event{
     border-top: solid 1px var(--vertFonce);
     /* border-bottom: solid 1px var(--vertFonce);  */
-    max-width: 1095px;
-    margin: auto;
     padding: 8px 0px;
     display: flex;
     justify-content: space-between;
