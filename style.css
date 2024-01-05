@@ -353,6 +353,79 @@ select::-ms-expand {
 }
 
 /* ------------ PAGE LIST BOOK - DEBUT ------------ */
+
+/* -- MODAL BILLET (list_book.php) -- */
+
+#modalBillet {
+    position:fixed;
+    z-index:10;
+    top:80px;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(233, 233, 233, 0.8);
+    display:flex;
+    justify-content:end;
+    align-items:center;
+}
+
+.modal-contentBillet {
+    position:relative;
+    width:500px;
+    background:var(--vertFonceMoin);
+    padding:50px;
+    height: 100%;
+}
+
+.modalTitreBillet {
+    color:var(--vertClair);
+}
+
+.modal-contentBillet p {
+    color:var(--vertClair);
+    margin:0;
+}
+
+.modal-closeBillet {
+    display:block;
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:20px;
+}
+
+#modalBillet:not(:target) {
+    opacity:0;
+    visibility:hidden;
+    transition:0.5s;
+}
+
+#modalBillet:target {
+    opacity:1;
+    visibility:visible;
+    transition:0.5s;
+}
+
+#lb_btnBillet {
+    background-color: var(--vertMoyen);
+    color: var(--vertClair);
+    text-decoration: none;
+    border: none;
+    position: fixed;
+    bottom: 0;
+    width: 400px;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+
+
+/* -- CONTAINER (list_book.php) -- */
+
 .lb_container{
     max-width: 1095px;
     margin: auto;
@@ -495,6 +568,108 @@ select::-ms-expand {
 
 /* ------------ PAGE LIST BOOK - FIN ------------ */
 
+
+/* ------------ PAGE INFO PERSO - DEBUT ------------ */
+
+/* -- MODAL INFO PERSO (info_user.php) -- */
+
+#modalInfoPerso {
+    position:fixed;
+    z-index:10;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(233, 233, 233, 0.8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-contentInfoPerso {
+    position: relative;
+    width: 600px;
+    background: var(--vertFonceMoin);
+    padding: 50px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* TEXTE */
+.modalTitreInfoPerso {
+    color: var(--vertClair);
+    font-size: 21px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+}
+
+.modalInfoPerso{
+    margin: 15px 0;
+}
+
+.modal-contentInfoPerso p {
+    color: var(--vertClair);
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    line-height: 24px;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.modal-closeInfoPerso {
+    display:block;
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:20px;
+}
+
+#modalInfoPerso:not(:target) {
+    opacity:0;
+    visibility:hidden;
+    transition:0.5s;
+}
+
+#modalInfoPerso:target {
+    opacity:1;
+    visibility:visible;
+    transition:0.5s;
+}
+
+/* BOUTON MODAL */
+
+.iu_btnInfoPerso {
+    text-decoration: none;
+    width: 400px;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+#iu_btnInfoPersoRevenir {
+    background-color: var(--vertFonceMoin);
+    border: solid 1px var(--vertClair);
+    color: var(--vertClair);
+}
+
+#iu_btnInfoPersoQuitter {
+    background-color: var(--vertClair);
+    border: solid 1px var(--vertClair);
+    color: var(--vertFonceMoin);
+}
+
+/* ------------ PAGE INFO PERSO - FIN ------------ */
+
+
+/* ----------------------- MEDIA QUERY - DEBUT ----------------------- */
+
 @media screen and (max-width:1400px) {
     .containerDroit {
         width: 500px;
@@ -510,6 +685,7 @@ select::-ms-expand {
     }
     
 }
+
 
 @media screen and (max-width:900px) {
 

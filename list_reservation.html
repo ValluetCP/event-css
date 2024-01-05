@@ -9,9 +9,17 @@
       content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- MODAL BILLET-->
+    <div id="modalBillet">
+      <div class="modal-contentBillet">
+          <a class="modal-closeBillet" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+          <a href="" id="lb_btnBillet">Télécharger le billet</a>
+      </div>
+    </div>
     <nav>
       <div class="navigation">
         <div class="recherche">
@@ -24,6 +32,8 @@
         </div>
       </div>
     </nav>
+
+    <!-- CONTENU-->
     <main>
       <div class="lb_container">
         <div class="filtreCategory">
@@ -64,7 +74,7 @@
             </div>
           </div>
           <div class="lb_reservation">
-            <a href="" class="lb_billet">Télécharger le billet</a>
+            <a href="#modalBillet" class="lb_billet">Télécharger le billet</a>
             <a href="" class="lb_consulter">Consulter</a>
           </div>
         </div>
