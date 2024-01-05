@@ -14,12 +14,39 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     --vertFonce: #172A23;
     --vertFonceMoin: #243b32;
     --vertMoyen: #3A5D4D;
+    --vertScroll: #1e5a3f;
     --vertClair: #EBF2ED;
 
     /* Couleur vert (secondaire) */
     --vertFonceTransparent: #65736D;
     --vertNavTrait:#D4DFD7;
 }
+
+/* Scroll */ 
+html {
+    scroll-behavior: smooth;
+}
+
+
+                    /* Scrollbar -voir ligne 1619*/ 
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+    
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--vertScroll); 
+    box-shadow: 0 -100vh 0 100vh var(--vertScroll);
+}
+    
+    /* Handle on hover */
+    /* ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+    } */
+
+
 
 
 
@@ -363,7 +390,7 @@ select::-ms-expand {
     left:0;
     right:0;
     bottom:0;
-    background: rgba(233, 233, 233, 0.8);
+    background: rgba(255, 255, 255, 0.5);
     display:flex;
     justify-content:end;
     align-items:center;
@@ -410,6 +437,7 @@ select::-ms-expand {
     background-color: var(--vertMoyen);
     color: var(--vertClair);
     text-decoration: none;
+    text-transform: uppercase;
     border: none;
     position: fixed;
     bottom: 0;
@@ -580,7 +608,7 @@ select::-ms-expand {
     left:0;
     right:0;
     bottom:0;
-    background: rgba(233, 233, 233, 0.8);
+    background: rgba(255, 255, 255, 0.5);
     display:flex;
     justify-content:center;
     align-items:center;
