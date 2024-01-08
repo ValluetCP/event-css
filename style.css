@@ -37,14 +37,21 @@ html {
     
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--vertScroll); 
-    box-shadow: 0 -100vh 0 100vh var(--vertScroll);
+    background: var(--vertFonceTransparent); 
+    box-shadow: 0 -100vh 0 100vh var(--vertFonceTransparent);
 }
     
     /* Handle on hover */
     /* ::-webkit-scrollbar-thumb:hover {
     background: #b30000; 
     } */
+
+
+
+
+
+
+
 
 
 
