@@ -12,6 +12,25 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- MODAL INFO PERSO-->
+    <div id="modalEvent">
+        <div class="modal-contentEvent">
+  
+            <a class="modal-closeEvent" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+            <div class="modalTexteEvent">
+                <h2 class="modalTitreEvent">Votre événement</h2>
+                <hr class="modalEvent">
+                <p>Une réservation a déjà été faite.</p>
+                
+            </div>
+            <div class="btnEventGroup">
+                <a href="" id="e_btnEventRevenir"class="e_btnEvent">Ajouter une autre réservation</a>
+                <a href="" id="e_btnEventQuitter"class="e_btnEvent">Fermer</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV -->
     <nav>
         <div class="navigation">
             <div class="recherche">
@@ -69,6 +88,7 @@
                     </div>
                 </div>
                 <button type="button" class="reserve">Réserver</button>
+                <a href="#modalEvent" class="lb_billet">Télécharger le billet</a>
                 <h3>Vous pourriez aimer</h3>
                 <div class="trioCategory">
                     <article class="categoryUn">

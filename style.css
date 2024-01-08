@@ -703,6 +703,105 @@ select::-ms-expand {
 /* ------------ PAGE INFO PERSO - FIN ------------ */
 
 
+/* ------------ PAGE EVENT - DEBUT ------------ */
+
+/* -- MODAL EVENT (event.php) -- */
+
+#modalEvent {
+    position:fixed;
+    z-index:10;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(255, 255, 255, 0.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-contentEvent {
+    position: relative;
+    width: 600px;
+    background: var(--vertFonceMoin);
+    padding: 50px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* TEXTE */
+.modalTitreEvent {
+    color: var(--vertClair);
+    font-size: 21px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+}
+
+.modalEvent{
+    margin: 15px 0;
+}
+
+.modal-contentEvent p {
+    color: var(--vertClair);
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    line-height: 24px;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.modal-closeEvent {
+    display:block;
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:20px;
+}
+
+#modalEvent:not(:target) {
+    opacity:0;
+    visibility:hidden;
+    transition:0.5s;
+}
+
+#modalEvent:target {
+    opacity:1;
+    visibility:visible;
+    transition:0.5s;
+}
+
+/* BOUTON MODAL */
+
+.e_btnEvent {
+    text-decoration: none;
+    width: 400px;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+#e_btnEventRevenir {
+    background-color: var(--vertFonceMoin);
+    border: solid 1px var(--vertClair);
+    color: var(--vertClair);
+}
+
+#e_btnEventQuitter {
+    background-color: var(--vertClair);
+    border: solid 1px var(--vertClair);
+    color: var(--vertFonceMoin);
+}
+
+/* ------------ PAGE INFO PERSO - FIN ------------ */
+
+
 /* ----------------------- MEDIA QUERY - DEBUT ----------------------- */
 
 @media screen and (max-width:1400px) {
