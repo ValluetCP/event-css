@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Historique réservation</title>
+    <meta name="description" content="Une phrase d’environ 170 caractères">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="navigation">
+            <div class="recherche">
+                <input id="recherche" type="text" placeholder="RECHERCHER">
+            </div>
+            <div class="panier">PANIER (0)</div>
+            <div class="menu">
+                <div class="trait1"></div>
+                <div class="trait2"></div>
+            </div>
+        </div>
+    </nav>
+    <main class="site">
+        <!-- SECTION GAUCHE - IMAGE FIXE -->
+        <section class="gauche">
+            <div class="gaucheImg"></div>
+        </section>
+
+        <!-- SECTION DROITE - FICHE PRODUIT -->
+        <section class="droite">
+            <div class="containerDroit">
+                <h1>Salon de l'automobile</h1>
+                <h2>catégorie</h2>
+                <div class="imgEvent">
+                    <img src="./img/calamar.JPG" alt="">
+                </div>
+                <h4>Date</h4>
+                <p class="dateEvent">29-05-2024</p>
+                <h4>Résumé</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. 
+                </p>
+                <p class="statePlace">
+                    Nombre de place disponible : <span>23</span><br>
+                    Nombre de place totale : 40 <br>
+                    Nombre de place réservée : 15 <br>
+                </p>
+                <div class="place_prix">
+                    <div class="prixSelect">
+                        <!-- https://codepen.io/mrphang/pen/XWxKdpV -->
+                        <select name="place" id="place">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="prix">
+                        <p>Prix : 75€</p>
+                    </div>
+                </div>
+                <button type="button" class="reserve">Réserver</button>
+                <button onclick="window.location.href='#modalEvent'" type="button" class="reserve">Ajouter une réservation</button>
+                <h3>Vous pourriez aimer</h3>
+                <div class="trioCategory">
+                    <article class="categoryUn">
+                        <figure class="fig_1">
+                            <a href="">
+                                <div class="imgCategory"><img src="./img/langouste.JPG" alt=""></div>
+                            </a>
+                        </figure>
+                        <div class="titreCategory">
+                            Asseyez-vous à la grande table
+                        </div>
+                        <div class="sousTitreCategory">
+                            DIVERTISSEMENT
+                        </div>
+                    </article>
+                    <article class="categoryDeux">
+                        <figure class="fig_1">
+                            <a href="">
+                                <div class="imgCategory"><img src="./img/calamar.JPG" alt=""></div>
+                            </a>
+                        </figure>
+                        <div class="titreCategory">
+                            Calamar gourmand
+                        </div>
+                        <div class="sousTitreCategory">
+                            DIVERTISSEMENT
+                        </div>
+                    </article>
+                    <article class="categoryTrois">
+                        <figure class="fig_1">
+                            <a href="">
+                                <div class="imgCategory"></div>
+                            </a>
+                        </figure>
+                        <div class="titreCategory">
+                            Salon de l'automobile
+                        </div>
+                        <div class="sousTitreCategory">
+                            DIVERTISSEMENT
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
