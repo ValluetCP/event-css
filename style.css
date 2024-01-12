@@ -906,11 +906,16 @@ select::-ms-expand {
     font-family: americana regular;
     font-size: 26px;
     color: var(--vertNavTrait);
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 .b_tableau{
     width: 100%;
+}
+
+.b_tableau tr td{
+    height: 35px;
+    padding-top: 16px;
 }
 
 .b_tableau th{
@@ -940,12 +945,30 @@ select::-ms-expand {
     color: var(--vertMoyen);
 }
 
+.b_tableau_contenu{
+    margin-top: 20px;  
+}
+
 .b_tableau_contenu td{
     font-family: americana regular;
     font-size: 20px;
     color: var(--vertFonce);
-    /* margin-bottom: 20px; */
+    /* margin-bottom: 20px; */   
+}
+
+.b_tableau_contenu td a{
     
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    background-color: var(--vertFonce);
+    color: var(--vertClair);
+    padding: 0px 20px;
+}
+
+.b_annuler{
+    text-align: end;
 }
 
 /* ------------ PAGE BOOK - HISTORIQUE (book.php) - FIN ------------ */
