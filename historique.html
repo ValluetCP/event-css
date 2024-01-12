@@ -34,81 +34,37 @@
         </section>
 
         <!-- SECTION DROITE - FICHE PRODUIT -->
-        <section class="droite">
+        <section class="droite droiteHistorique">
             <div class="containerDroit">
                 <h1>Salon de l'automobile</h1>
                 <h2>catégorie</h2>
-                <div class="imgEvent">
-                    <img src="./img/calamar.JPG" alt="">
-                </div>
-                <h4>Date</h4>
-                <p class="dateEvent">29-05-2024</p>
-                <h4>Résumé</h4>
+                <h5 class="b_historique">
+                    Historique
+                </h5>
+                <table class="b_tableau">
+                    <tr class="b_tableau_titre">
+                        <th colspan="2">Date de réservation & Heure</th>
+                        <th>Nombre de place</th>
+                        <th></th>
+                    </tr>
+                    <tr class="b_tableau_contenu">
+                        <td>09-09-2023</td>
+                        <td>12:45</td>
+                        <td>3</td>
+                        <td><a href="">Annuler</a></td>
+                    </tr>
+                    </tr>
+                    <tr class="b_tableau_contenu">
+                        <td>13-09-2023</td>
+                        <td>14:16</td>
+                        <td>1</td>
+                        <td><a href="">Annuler</a></td>
+                    </tr>
+                </table>
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. 
                 </p>
-                <p class="statePlace">
-                    Nombre de place disponible : <span>23</span><br>
-                    Nombre de place totale : 40 <br>
-                    Nombre de place réservée : 15 <br>
-                </p>
-                <div class="place_prix">
-                    <div class="prixSelect">
-                        <!-- https://codepen.io/mrphang/pen/XWxKdpV -->
-                        <select name="place" id="place">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
-                    </div>
-                    <div class="prix">
-                        <p>Prix : 75€</p>
-                    </div>
-                </div>
-                <button type="button" class="reserve">Réserver</button>
-                <button onclick="window.location.href='#modalEvent'" type="button" class="reserve">Ajouter une réservation</button>
-                <h3>Vous pourriez aimer</h3>
-                <div class="trioCategory">
-                    <article class="categoryUn">
-                        <figure class="fig_1">
-                            <a href="">
-                                <div class="imgCategory"><img src="./img/langouste.JPG" alt=""></div>
-                            </a>
-                        </figure>
-                        <div class="titreCategory">
-                            Asseyez-vous à la grande table
-                        </div>
-                        <div class="sousTitreCategory">
-                            DIVERTISSEMENT
-                        </div>
-                    </article>
-                    <article class="categoryDeux">
-                        <figure class="fig_1">
-                            <a href="">
-                                <div class="imgCategory"><img src="./img/calamar.JPG" alt=""></div>
-                            </a>
-                        </figure>
-                        <div class="titreCategory">
-                            Calamar gourmand
-                        </div>
-                        <div class="sousTitreCategory">
-                            DIVERTISSEMENT
-                        </div>
-                    </article>
-                    <article class="categoryTrois">
-                        <figure class="fig_1">
-                            <a href="">
-                                <div class="imgCategory"></div>
-                            </a>
-                        </figure>
-                        <div class="titreCategory">
-                            Salon de l'automobile
-                        </div>
-                        <div class="sousTitreCategory">
-                            DIVERTISSEMENT
-                        </div>
-                    </article>
-                    
-                </div>
+                
             </div>
 
         </section>
