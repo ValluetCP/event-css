@@ -959,7 +959,7 @@ select::-ms-expand {
 .b_tableau_contenu td a{
     
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Karla', sans-serif;
     font-weight: 300;
     background-color: var(--vertFonce);
@@ -969,6 +969,89 @@ select::-ms-expand {
 
 .b_annuler{
     text-align: end;
+}
+
+/* MENU ACCORDEON */
+
+.contenuEvent{
+    margin-top: 84px;
+}
+
+#ouvrir,
+#fermer{
+    color: var(--vertFonce);
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+#b_resume{
+    margin-top: 10px;
+}
+
+#accordeon {
+    margin:0px; 
+    padding:0px;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+}
+	
+#accordeon dt{
+    font-size:14px; 
+    background-color:var(--vertFonce);
+    color: var(--vertClair);
+    padding:10px 15px; 
+    margin-bottom:5px; 
+    cursor:url(img/cursor.png), pointer;
+    text-transform: uppercase;
+}
+
+#accordeon dt:hover, 
+.current {
+    background-color:var(--vertFonce)!important; 
+    color:var(--vertClair)!important; 
+    font-size:14px!important; 
+    text-shadow:0 1px #000!important;
+}
+
+.current {
+    cursor:url(img/cursor2.png), 
+    pointer!important;
+}
+
+#accordeon dd {
+    padding:10px 20px; 
+    border-left:5px solid var(--vertFonce); 
+    margin:10px 0 10px 0;
+}
+
+#accordeon dd p {
+    font-size: 16px!important;
+}
+
+/* FACTURE */
+.b_facture{
+    display: flex;
+    justify-content: end;
+    margin-top: 45px;
+    
+}
+
+.b_btn_facture{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    background-color: var(--vertClair);
+    color: var(--vertFonce);
+    padding: 10px 50px; 
+}
+
+.containerDroit .b_defaut{
+    color: white;
 }
 
 /* ------------ PAGE BOOK - HISTORIQUE (book.php) - FIN ------------ */
