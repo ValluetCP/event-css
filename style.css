@@ -482,8 +482,6 @@ nav{
 /* -------------- MODAL PANIER(panier.php) - DEBUT -------------- */
 
 
-/* -------------- MODAL PANIER(panier.php) - FIN -------------- */
-
 /* CONTENU */
 
 .modalContentPanier {
@@ -615,6 +613,24 @@ nav{
 }
 
 
+
+#lb_btnBillet{
+    right: 57px;
+}
+
+/* -------------- MODAL PANIER(panier.php) - FIN -------------- */
+
+
+/* CORRECTION */
+
+/* .lb_container {
+    max-width: 1030px;
+} */
+
+/* .lb_imageEvent {
+    width: 182px;
+    height: 143px;
+} */
 
 
 /* -------------- PAGE EVENT (event.php) -------------- */
@@ -1248,6 +1264,32 @@ padding-left: 624px;
         right: 100px;
     }
 
+    /* ------------ MODAL PANIER (max-width:1400px) - DEBUT ------------ */
+
+    .modalPanierContainer {
+        width: 435px;
+        margin: auto;
+    }
+
+    .modalPanierimg {
+        width: 142px;
+        height: 200px;
+    }
+
+    .modalPaniertitre {
+        font-size: 34px;
+        line-height: 35px;
+    }
+
+    .btn_billet_panier{
+        right: 92px;
+    }
+
+    .modalPanierQuantite {
+        margin-top: 46px;
+    }
+    /* ------------ MODAL PANIER (max-width:1400px) - FIN ------------ */
+
     /* EVENT */
     .containerDroit {
         width: 500px;
@@ -1499,6 +1541,56 @@ padding-left: 624px;
         width: 100%;
     }
 
+    
+    /* ------------ MODAL PANIER (max-width:700px) - DEBUT ------------ */
+
+    .modalPanierContainer {
+        width: 320px;
+    }
+
+    .modalContentPanier {
+        width: 350px;
+        padding-top: 92px;
+    }
+
+    .btn_billet_panier {
+        right: 56px;
+        width: 225px;
+    }
+
+    .modalPanierAjout {
+        font-size: 19px;
+    }
+
+    .modalPanierContainerItems {
+        margin-top: 36px;
+        border-bottom: 1px solid var(--vertFonceTransparent);
+    }
+
+    .modalPanierimg {
+        width: 117px;
+        height: 150px;
+    }
+
+    .modalPaniertxt {
+        padding-top: 12px;
+    }
+
+    .modalPaniertitre {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .modalPanierCategorie {
+        font-size: 14px;
+    }
+
+    .modalPanierQuantite {
+        margin-top: 34px;
+        font-size: 16px;
+    }
+    /* ------------ MODAL PANIER (max-width:700px) - FIN ------------ */
+
 
     /* NAV */
     #recherche {
@@ -1669,6 +1761,12 @@ padding-left: 624px;
     }
 
     /* ------------ MODAL (max-width:415px) - FIN ------------ */
+
+    /* ------------ MODAL PANIER(max-width:415px) - DEBUT ------------ */
+    #modalPanier {
+        top: 50px;
+    }
+    /* ------------ MODAL PANIER(max-width:415px) - FIN ------------ */
 
 
     /* ------------ PAGE EVENT (max-width:415px) - DEBUT ------------ */
