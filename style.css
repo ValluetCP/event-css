@@ -251,7 +251,9 @@ nav{
 
 /* -- MODAL BILLET - structure générale (list_book.php) -- */
 
-#modalBillet {
+#modalBillet,
+#modalPanier
+ {
     position:fixed;
     z-index:10;
     top:80px;
@@ -318,9 +320,8 @@ nav{
     transition:0.5s;
 }
 
-#lb_btnBillet {
-    background-color: var(--vertMoyen);
-    color: var(--vertClair);
+/* BOUTON */
+.btn_billet_panier{
     text-decoration: none;
     text-transform: uppercase;
     border: none;
@@ -333,6 +334,11 @@ nav{
     font-weight: 300;
     text-align: center;
     padding: 10px 0;
+}
+
+#lb_btnBillet {
+    background-color: var(--vertMoyen);
+    color: var(--vertClair);
     /* margin-bottom: 30px; */
 }
 
@@ -471,6 +477,142 @@ nav{
 
 
 /* -------------- MODAL BILLET (list_book.php) - FIN -------------- */
+
+
+/* -------------- MODAL PANIER(panier.php) - DEBUT -------------- */
+
+
+/* -------------- MODAL PANIER(panier.php) - FIN -------------- */
+
+/* CONTENU */
+
+.modalContentPanier {
+    position:relative;
+    width:580px;
+    /* width:500px; */
+    background:var(--vertClair);
+    height: 100%;
+    border-left: 1px solid var(--vertFonce);
+    padding-top: 112px;
+}
+
+.modalPanierContainer{
+    width:500px;
+    margin: auto;
+}
+
+.modalPanierAjout{
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.modalPanierContainerItems{
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--vertFonce);
+}
+
+.modalPaniertxt{
+    text-align: center;
+    padding-top: 28px;
+}
+
+/* TEXTE */
+.modalPaniertitre{
+    font-size: 38px;
+    color: var(--vertMoyen);
+    font-family: americana regular;
+    line-height: 41px;
+}
+
+.modalPanierCategorie{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.modalPanierQuantite{
+    margin-top: 36px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--vertMoyen);
+}
+
+
+/* -- IMAGE EN BACKGROUND (panier.php) -- */
+.modalPanierimg{
+    background-image: url(./img/coco2.JPG);
+    background-repeat: no-repeat;
+    width: 168px;
+    height: 214px;
+    /* height: 232px; */
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    
+}
+
+
+/* CROIX */
+.modalClosePanier {
+    display:block;
+    position:absolute;
+    top:20px;
+    right:20px;
+    font-size:20px;
+}
+
+.img_croix_popup2 {
+    width: 20px;
+    height: 20px;
+}
+
+
+#modalPanier:not(:target) {
+    opacity:0;
+    visibility:hidden;
+    transition:0.5s;
+}
+
+#modalPanier:target {
+    opacity:1;
+    visibility:visible;
+    transition:0.5s;
+}
+
+
+/* BOUTON */
+
+.btn_billet_panier{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 5%;
+    width: 375px;
+    /* width: 300px; */
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#lb_btnPanier {
+    background-color: var(--vertMoyen);
+    color: var(--vertClair);
+    
+    /* margin-bottom: 30px; */
+}
 
 
 
