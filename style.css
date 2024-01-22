@@ -71,7 +71,7 @@ nav{
     z-index: 10;
     height: 60px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     padding: 0 70px;
 
@@ -1230,6 +1230,92 @@ padding-left: 624px;
 }
 
 /* ------------ PAGE BOOK - HISTORIQUE (book.php) - FIN ------------ */
+
+
+
+/* ------------ HOME PAGE - (home_page.php) - DEBUT ------------ */
+
+.hp_bg{
+    background-color: #172a23;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hp_bg_img{
+    background-image: url(./img/header2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -43px;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.2;
+}
+
+.logo_header{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(54%,40%);
+}
+
+/* NAV HEADER - (home-page.php)*/
+
+.nav_home_page {
+    background: transparent;
+    height: 75px;
+    
+}
+
+.hp_navigation #recherche {
+    border: solid 1px var(--vertClair);
+    background-color: transparent;
+}
+
+.hp_navigation #recherche::placeholder{
+    color: var(--vertClair);
+    opacity: 0.5;
+    padding-right: 8px;
+}
+
+.hp_navigation {
+    color: var(--vertClair);
+}
+
+#hp_trait1,
+#hp_trait2 {
+    background-color: var(--vertClair);
+}
+
+
+/* IMAGES HEADER */
+.hp_header_img1{
+    width: 236px;
+    height: 355px;
+    position: absolute;
+    bottom: 26px;
+    right: 243px;
+}
+.hp_header_img1 img,
+.hp_header_img2 img{
+    width: 218px;
+}
+
+.hp_header_img2{
+    width: 257px;
+    position: absolute;
+    bottom: -83px;
+    right: 93px;
+}
+
+.hp_header_img3{
+    width: 257px;
+    position: absolute;
+    bottom: -209px;
+    left: 278px;
+}
+
+/* ------------ HOME PAGE - (home_page.php) - FIN ------------ */
 
 
 /* ------------ PAGE INFO PERSO - DEBUT ------------ */
