@@ -268,7 +268,8 @@ nav{
 
 .modalContentBillet {
     position:relative;
-    width:500px;
+    width:615px;
+    /* width:500px; */
     background:var(--vertFonce);
     /* padding:50px; */
     height: 100%;
@@ -348,7 +349,7 @@ nav{
 .billet{
     width: 256px;
     position: fixed;
-    right: 6%;
+    right: 176px;
 }
 
 /* -- MODAL BILLET (partie haute)-- */
@@ -373,9 +374,25 @@ nav{
 }
 
 /* DATE */
-.divDate{
-    background-color: #172A23;
+.divDate {
+    background-color: var(--vertFonceMoin);
+    width: 30px;
+    height: 101px;
+    position: absolute;
+    top: 33px;
+    left: -1px;
+    border-radius: 0 4px 4px 0;
+    /* position: relative; */
+}
 
+.dateBillet {
+    color: var(--vertClair);
+    font-family: americana regular;
+    font-size: 15px;
+    transform: rotate(-90deg);
+    top: 43px;
+    right: -18px;
+    position: absolute;
 }
 
 /* TITRE & SOUS-TITRE */
@@ -612,10 +629,9 @@ nav{
     /* margin-bottom: 30px; */
 }
 
-
-
 #lb_btnBillet{
-    right: 57px;
+    right: 117px;
+    /* right: 57px; */
 }
 
 /* -------------- MODAL PANIER(panier.php) - FIN -------------- */
@@ -1261,6 +1277,10 @@ padding-left: 624px;
 
 /* NAV HEADER - (home-page.php)*/
 
+.nav_logo{
+    width: 80px;
+}
+
 .nav_home_page {
     background: transparent;
     height: 75px;
@@ -1338,17 +1358,38 @@ padding-left: 624px;
 
     /* MODAL */
 
+    /* ---------- MODAL BILLET - (max-width:1400px) - DEBUT ---------- */
+
+    /* -- MODAL BILLET - structure générale -- */
+    
+    .modalContentBillet {
+        width:500px;
+    }
+    
+    .billet{
+        right: 6%;
+    }
+
+    /* -- MODAL BILLET - Bouton -- */
+
+    
+    /* #lb_btnBillet{
+        right: 57px;
+    } */
+
+    
     .modalBilletBg {
         width: 65%;
     }
-
+    
     .billet {
         right: 118px;
     }
-
+    
     #lb_btnBillet {
         right: 100px;
     }
+    /* ---------- MODAL BILLET - (max-width:1400px) - FIN ---------- */
 
     /* ------------ MODAL PANIER (max-width:1400px) - DEBUT ------------ */
 
@@ -1376,7 +1417,12 @@ padding-left: 624px;
     }
     /* ------------ MODAL PANIER (max-width:1400px) - FIN ------------ */
 
-    /* EVENT */
+
+    
+    
+
+
+/* EVENT */
     .containerDroit {
         width: 500px;
         padding: 0 30px;
