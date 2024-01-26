@@ -1342,6 +1342,8 @@ padding-left: 624px;
 
 /* ------------ HOME PAGE - (home_page.php) - DEBUT ------------ */
 
+
+
 .hp_bg{
     background-color: #172a23;
     width: 100%;
@@ -1420,10 +1422,10 @@ padding-left: 624px;
     right: 93px;
 }
 
-.hp_header_img3{
-    width: 257px;
+.hp_header_img3 {
+    width: 218px;
     position: absolute;
-    bottom: -209px;
+    bottom: -154px;
     left: 278px;
 }
 
@@ -1446,8 +1448,13 @@ padding-left: 624px;
 }
 
 .hp_titre2{
-    font-size: 85px;
+    font-size: 96px;
     text-align: center;
+}
+
+#hp_container{
+    max-width: 930px;
+    padding-top: 0px; 
 }
 
 
