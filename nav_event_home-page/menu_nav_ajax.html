@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Menu nav AJAX</title>
+        <meta name="description" content="Une phrase d’environ 170 caractères" />
+        <meta
+          name="viewport"
+          content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style_ajax.css" />
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <div class="recherche">
+                    <input id="recherche" type="text" placeholder="RECHERCHER">
+                </div>
+                <div class="panier">PANIER (0)</div>
+                
+            </div>
+            <input type="checkbox" class="trigger" />
+            <div class="burger">
+                <div class="trait1"></div>
+                <div class="trait2"></div>
+            </div>
+            <div class="menu_nav grid_menu">
+                <div class="menu_vert">
+                    <div class="nav2_container">
+                        <!-- PROFIL CONNEXION  - (prénom & image profil rond) -->
+                        <div class="profil_nav">
+                            <div class="img_profil_nav">
+                                <a href=""><img class="img_profil" src="./img/calamar.JPG" alt=""></a>
+                            </div>
+                            <p>Bonjour Clara,</p>
+                        </div>
+                        <!-- ESPACE NAVIGATION  - MENU (admin & client) -->
+                        <div class="nav2_menu">
+                            <ul>
+                                <li><a href="#" onclick="showList('listeProfil')">Profil</a></li>
+                                <li><a href="#" onclick="showList('listeAdmin')">Espace Admin</a></li>
+                                <li><a href="#" onclick="showList('listeClient')">Espace Client</a></li>
+                            </ul>
+                        </div>
+                        <!-- ESPACE NAVIGATION  - LIENS -->
+                        <div class="listeProfil hidden list_sous_menu">
+                            <ul>
+                                <li><a href="">Informations personnelles</a></li>
+                                <li><a href="">Factures</a></li>
+                            </ul>
+                        </div>
+                        <div class="listeAdmin list_sous_menu">
+                            <ul>
+                                <li><a href="">Accueil</a></li>
+                                <li><a href="">liste des catégories</a></li>
+                                <li><a href="">liste des événements</a></li>
+                                <li><a href="">liste des utilisateurs</a></li>
+                            </ul>
+                        </div>
+                        <div class="listeClient hidden list_sous_menu">
+                            <ul>
+                                <li><a href="">Accueil</a></li>
+                                <li><a href="">Nos événements</a></li>
+                                <li><a href="">Vos réservations</a></li>
+                            </ul>
+                        </div>
+
+                         <!-- DECONNEXION  - LIENS -->
+                        <div class="deconnexion">
+                            <a href="">Déconnexion</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_fond">
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- masquer la nav au scroll (défilement) - lien : https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+    </header>
+    <script>
+        function showList(listClassName){
+            var allLists = document.querySelectorAll('.nav2_container div:not(.nav2_menu,.deconnexion,.profil_nav,.img_profil_nav)');
+            allLists.forEach(function(list) {
+                list.classList.add('hidden');
+            });
+    
+            // Afficher la liste correspondante
+            var selectedList = document.querySelector('.' + listClassName);
+            selectedList.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

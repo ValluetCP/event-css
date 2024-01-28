@@ -2,7 +2,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 
-/* FONT */
+/* ----------------------- FONT - VARIABLE ----------------------- */
 
 /* TITRE */
 @font-face {
@@ -27,9 +27,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     --vertNavTrait:#D4DFD7;
     --vertHover: #56846E;
     --vertScroll2: #576D5D;
+    --vertNavMenu: #9CA7A2;
 }
 
-/* Scroll */ 
+
+
+
+/* -------------------------- Scroll -------------------------- */ 
 html {
     scroll-behavior: smooth;
 }
@@ -57,21 +61,329 @@ html {
     } */
 
 
+/* AJAX */
+.hidden {
+    display: none;
+}
 
 
-
-
-
-
-
-
-
-
-
-
+    
+    
 /* -------------- NAVIGATION (event.php) -------------- */
-nav{
+.nav_home_page{
     /* padding: 30px 70px; */
+    border-bottom: solid 1px var(--vertNavTrait);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    transition: all 0.25s ease-in-out;
+    height: 80px;
+    
+}
+
+.navbar{
+    /* padding: 30px 70px; */
+    border-bottom: solid 1px var(--vertNavTrait);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    transition: all 0.25s ease-in-out;
+    height: 80px;
+}
+
+
+
+
+.navigation{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    color: var(--vertMoyen);
+    
+}
+
+.navigation div{
+    margin-left: 30px;
+}
+
+#recherche{
+    width: 500px;
+    height: 30px;
+    border: solid 1px var(--vertFonce);
+}
+
+#recherche::placeholder{
+    text-align: end;
+    color: var(--vertFonce);
+    opacity: 0.5;
+    padding-right: 8px;
+}
+
+.trait1{
+    width: 45px;
+    height: 3px;
+    background-color: var(--vertFonceMoin);
+    margin-bottom: 8px;
+}
+
+.trait2{
+    width: 45px;
+    height: 3px;
+    background-color: var(--vertFonceMoin);
+    margin-top: 8px;
+}
+
+
+
+
+/* NAV - Animation scroll - DEBUT*/
+
+.nav_home_page.scroll{
+    background-color: var(--vertFonce);
+    height: 75px;
+}
+
+
+.navbar.scroll{
+    background-color: #fff;
+    height: 75px;
+}
+
+/* NAV - Animation scroll - FIN */
+    
+
+
+
+
+
+/* Personnalisation */
+
+.nav_ss_menu{
+    display: flex;
+}
+
+
+.trigger{
+    display: none;
+}
+
+
+.burger > div {
+width: 45px;
+height: 3px;
+background: var(--vertFonce);
+margin-bottom: 0px;
+transition: all 0.5s ease-in;
+}
+
+
+.burger > div:nth-child(3) {
+margin-bottom: 0;
+}
+
+.burger,
+.trigger {
+cursor: pointer;
+position: fixed;
+top: 33px;
+right: 70px;
+display: block;
+margin: 0;
+z-index: 11;
+}
+
+/* Le trigger est un input qu'on a placé devant le burger qui sera cliqué quand l'user clique sur le burger: il a la meme taille */
+.trigger {
+z-index: 12;
+width: 45px;
+height: 26px;
+opacity: 0;
+}
+/* Animation du burger */
+
+.trigger:checked + .burger > div:nth-child(1) {
+/* background-color: aqua; */
+/* déplacer au milieu et tourner pour se mettre en diagonale: */
+transform: translateY(6px) rotate(-45deg);
+background-color: #fff;
+}
+
+.trigger:checked + .burger > div:nth-child(2) {
+/* background-color: #46C; */
+/* monter et pivoter */
+transform: translateY(-6px) rotate(+45deg);
+background-color: #fff;
+}
+.trigger:checked ~ .menu_nav{
+    transform: translate(0);
+}
+/* NAVIGATION */
+.menu_nav {
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+transform: translate(-100%);
+transition: all 0.8s ease-in-out;
+background-color: rgba(255, 255, 255, 0.5);
+/* display: none;  */
+/* n'affecte plus la nav */
+}
+    
+    
+    
+        
+/*///////////////////////////////// PERSONALISATION - MENU */
+
+.grid_menu{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    /* Espace navigation à gauche */
+    flex-direction: row;
+}
+
+.menu_vert{
+    background-color: var(--vertFonce);
+    padding-top: 262px;
+    width: 100%;
+    position: relative;
+}
+.menu_fond{
+    background-color: #172a2385;
+    width: 100%;
+}
+
+
+/* CONTENU MENU */
+
+.nav2_container{
+    /* width: 55%; */
+    width: 63%;
+    margin: auto;
+    
+}
+
+/* LOGO - MENU DE NAVIGATION */
+
+.logo_menu {
+    width: 100px;
+    position: absolute;
+    top: 36px;
+    left: 80px;
+}
+    
+/* --- PROFIL CONNEXION  - (prénom & image profil rond) --- */
+
+.profil_nav {
+    display: flex;
+    position: absolute;
+    top: 179px;
+    align-items: center;
+}
+
+.img_profil {
+    border: 2px solid var(--vertNavMenu);
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+}
+
+.profil_nav p{
+    text-decoration: none;
+    font-family: 'Karla', sans-serif; 
+    color: var(--vertNavMenu);
+    font-size: 18px;
+    font-weight: 200;
+    padding-left: 24px;
+} 
+    
+/* --- ESPACE NAVIGATION  - MENU (admin & client) --- */
+
+.nav2_menu{
+    margin-top: 54px;
+    padding: 0 81px;
+}
+
+.nav2_menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav2_menu ul a{
+    text-decoration: none;
+    font-family: 'Karla', sans-serif; 
+    color: var(--vertHover);
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
+}
+
+.nav2_menu ul a:hover{
+    color: var(--vertClair);
+}
+    
+    
+/* --- ESPACE NAVIGATION  - LIENS --- */
+
+
+
+.list_sous_menu ul li a{
+    font-family: 'AmericanaRegular';
+    color: var(--vertClair);
+    text-decoration: none;
+    font-size: 40px;
+    /* font-size: 43px; */
+    transition: all 0.25s ease-in-out;
+}
+
+.list_sous_menu ul li{
+    padding-top: 42px;
+}
+
+.list_sous_menu ul li a:hover{
+    color: var(--vertHover);
+}
+    
+
+/* --- DECONNEXION - LIENS --- */
+
+.deconnexion {
+    text-align: end;
+    /* margin-top: 234px; */
+    position: absolute;
+    bottom: 85px;
+    right: 165px;
+}
+.deconnexion a{
+    text-decoration: none;
+    font-family: 'Karla', sans-serif; 
+    color: var(--vertNavMenu);
+    font-size: 18px;
+    font-weight: 200;
+}
+
+
+
+
+
+/* -------------- NAVIGATION (event.php) - ANCIENNE VERSION-------------- */
+/* nav{
     border-bottom: solid 1px var(--vertNavTrait);
     background: white;
     position: fixed;
@@ -124,7 +436,7 @@ nav{
     height: 3px;
     background-color: var(--vertFonceMoin);
     margin-top: 8px;
-}
+} */
 
 
 
@@ -666,7 +978,8 @@ nav{
     grid-template-columns: 40% auto;
     grid-template-areas: 
     "gauche droite";
-    padding-top: 60px;
+    padding-top: 0px;
+    /* padding-top: 60px; */
     padding-bottom: 50px;
 }
 
@@ -702,7 +1015,7 @@ nav{
 
 .containerDroit{
     width: 730px;
-    /* width: 750px; */
+    margin-top: 75px;
 }
 
 /* Encadré - Etat de l'event */
@@ -1373,12 +1686,6 @@ padding-left: 624px;
 
 .nav_logo{
     width: 80px;
-}
-
-.nav_home_page {
-    background: transparent;
-    height: 75px;
-    
 }
 
 .hp_navigation #recherche {

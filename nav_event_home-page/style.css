@@ -1,0 +1,232 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}html{box-sizing:border-box}*,::after,::before{box-sizing:inherit}img,video{width:100%;vertical-align:middle;}
+
+/* FONT */
+@font-face {
+    font-family: americana regular;
+    src: url(./font/Americana\ Font\ Regular/);
+    font-weight: regular;
+    /* font-weight: bold; */
+}
+
+:root{
+
+    /* Couleur vert (principale) */
+    --vertFonce: #172A23;
+    --vertFonceMoin: #243b32;
+    --vertMoyen: #3A5D4D;
+    --vertScroll: #1e5a3f;
+    --vertClair: #EBF2ED;
+
+    /* Couleur vert (secondaire) */
+    --vertFonceTransparent: #65736D;
+    --vertNavTrait:#D4DFD7;
+}
+
+
+
+/* AJAX */
+.hidden {
+    display: none;
+}
+
+
+/* Menu - NAV */
+
+
+nav{
+    position: fixed;
+    background-color: #06050a86;
+    display: flex;
+    height: 72px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 195px;
+    width: 100%;
+    z-index: 8;
+    top: 0;
+}
+
+/* -------------- NAVIGATION (event.php) -------------- */
+nav{
+    /* padding: 30px 70px; */
+    border-bottom: solid 1px var(--vertNavTrait);
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 70px;
+
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    color: var(--vertMoyen);
+    
+}
+
+.navigation div{
+    margin-left: 30px;
+}
+
+#recherche{
+    width: 500px;
+    height: 30px;
+    border: solid 1px var(--vertFonce);
+}
+
+#recherche::placeholder{
+    text-align: end;
+    color: var(--vertFonce);
+    opacity: 0.5;
+    padding-right: 8px;
+}
+
+.trait1{
+    width: 45px;
+    height: 3px;
+    background-color: var(--vertFonceMoin);
+    margin-bottom: 8px;
+}
+
+.trait2{
+    width: 45px;
+    height: 3px;
+    background-color: var(--vertFonceMoin);
+    margin-top: 8px;
+}
+
+/* Personnalisation */
+
+.nav_ss_menu{
+    display: flex;
+}
+
+
+.trigger{
+    display: none;
+}
+
+
+.burger > div {
+width: 36px;
+height: 4px;
+background: white;
+margin-bottom: 7px;
+transition: all 0.5s ease-in;
+}
+
+
+.burger > div:nth-child(3) {
+margin-bottom: 0;
+}
+
+.burger,
+.trigger {
+cursor: pointer;
+position: fixed;
+top: 28px;
+right: 50px;
+display: block;
+margin: 0;
+z-index: 11;
+}
+/* Le trigger est un input qu'on a placé devant le burger qui sera cliqué quand l'user clique sur le burger: il a la meme taille */
+.trigger {
+z-index: 12;
+width: 36px;
+height: 26px;
+opacity: 0;
+}
+/* Animation du burger */
+
+.trigger:checked + .burger > div:nth-child(1) {
+/* background-color: aqua; */
+/* déplacer au milieu et tourner pour se mettre en diagonale: */
+transform: translateY(11px) rotate(-45deg);
+}
+.trigger:checked + .burger > div:nth-child(2) {
+/* background-color: chocolate; */
+/* réduire l'échelle horizontale jusqu'a disparaitre */
+transform: scale(0.2, 0);
+opacity: 0;
+}
+.trigger:checked + .burger > div:nth-child(3) {
+/* background-color: #46C; */
+/* monter et pivoter */
+transform: translateY(-11px) rotate(+45deg);
+}
+.trigger:checked ~ .menu_nav{
+    transform: translate(0);
+}
+/* NAVIGATION */
+.menu_nav {
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+transform: translate(100%);
+transition: all 0.8s ease-in-out;
+background-color: rgba(255, 255, 255, 0.5);
+/* display: none;  */
+/* n'affecte plus la nav */
+}
+
+
+
+    
+    /*///////////////////////////////// PERSONALISATION - MENU */
+    
+    .grid_menu{
+        display: flex;
+        margin: auto;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+    
+    .menu_vert{
+        background-color: var(--vertFonce);
+        padding-top: 190px;
+        width: 100%;
+        
+    }
+    .menu_fond{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+    }
+    
+
+    /* CONTENU MENU */
+
+    .nav2_container{
+        width: 55%;
+        margin: auto;
+        
+    }
+    
+    .nav2_menu ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav2_menu ul a{
+        text-decoration: none;
+    }
+
+    .list_sous_menu{
+        margin-top: 50px;
+    }
+   
+    
+    
