@@ -70,7 +70,8 @@ html {
     
     
 /* -------------- NAVIGATION (event.php) -------------- */
-.nav_home_page{
+.nav_home_page,
+.navbar {
     /* padding: 30px 70px; */
     border-bottom: solid 1px var(--vertNavTrait);
     position: fixed;
@@ -79,25 +80,11 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 150px;
+    padding: 0 150px 0 80px;
     transition: all 0.25s ease-in-out;
     height: 80px;
-    
 }
 
-.navbar{
-    /* padding: 30px 70px; */
-    border-bottom: solid 1px var(--vertNavTrait);
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 150px;
-    transition: all 0.25s ease-in-out;
-    height: 80px;
-}
 
 
 
@@ -347,7 +334,7 @@ background-color: rgba(255, 255, 255, 0.5);
     font-family: 'AmericanaRegular';
     color: var(--vertClair);
     text-decoration: none;
-    font-size: 40px;
+    font-size: 38px;
     /* font-size: 43px; */
     transition: all 0.25s ease-in-out;
 }
@@ -1755,7 +1742,8 @@ padding-left: 624px;
 }
 
 .hp_titre2{
-    font-size: 96px;
+    font-size: 83px;
+    /* font-size: 96px; */
     text-align: center;
 }
 
@@ -1784,6 +1772,37 @@ padding-left: 624px;
 /* ----------------------- MEDIA QUERY - DEBUT ----------------------- */
 
 @media screen and (max-width:1400px) {
+
+    /* ---------- NAV - (max-width:1400px) - DEBUT ---------- */
+
+    /* -- BARRE DE NAVIGATION - début-- */
+    .nav_home_page {
+        padding: 0 150px 0 70px;
+    }
+
+    #recherche {
+        width: 460px;
+    }
+
+    /* -- ESPACE DE NAVIGATION - début-- */
+    .menu_fond {
+        display: none;
+    }
+
+    .nav2_menu {
+        padding: 0 0px;
+        margin-bottom: 16px;
+    }
+
+    .list_sous_menu ul li a {
+        font-size: 37px;
+    }
+
+    .deconnexion {
+        right: 238px;
+    }
+    /* ---------- NAV - (max-width:1400px) - FIN ---------- */
+
 
 
     /* MODAL */
@@ -1927,6 +1946,19 @@ padding-left: 624px;
 
 
 @media screen and (max-width:900px) {
+
+    /* ---------- NAV - (max-width:900px) - DEBUT ---------- */
+    
+    /* -- BARRE DE NAVIGATION - début-- */
+
+    /* -- ESPACE DE NAVIGATION - début-- */
+    
+    .deconnexion {
+        right: 166px;
+    }
+    
+    /* ---------- NAV - (max-width:900px) - DEBUT ---------- */
+
 
     /* MODAL */
 
@@ -2123,6 +2155,26 @@ padding-left: 624px;
 
 @media screen and (max-width:700px) {
 
+     /* ---------- NAV - (max-width:700px) - DEBUT ---------- */
+     
+     /* -- BARRE DE NAVIGATION - début-- */
+     
+     /* -- ESPACE DE NAVIGATION - début-- */
+    .list_sous_menu ul li a {
+         font-size: 28px;
+    }
+
+    .nav2_container {
+        width: 73%;
+    }
+
+    .deconnexion {
+        right: 107px;
+    }
+        
+    /* ---------- NAV - (max-width:700px) - DEBUT ---------- */
+
+
     /* MODAL */
     .modalBilletBg {
         width: 100%;
@@ -2290,6 +2342,38 @@ padding-left: 624px;
 }
 
 @media screen and (max-width:500px){
+
+    /* ---------- NAV - (max-width:500px) - DEBUT ---------- */
+    
+    /* -- BARRE DE NAVIGATION - début-- */
+    .nav_home_page {
+        padding: 0 116px 0 22px;
+    }
+
+    .burger, .trigger {
+        right: 24px;
+    }
+    
+    /* -- ESPACE DE NAVIGATION - début-- */
+
+    .logo_menu {
+        top: 19px;
+        left: 45px;
+    }
+    .deconnexion {
+        right: 75px;
+    }
+
+    .nav2_menu ul a {
+        font-size: 16px;
+    }
+
+    .nav2_container {
+        width: 80%;
+    }
+    /* ---------- NAV - (max-width:500px) - FIN ---------- */
+
+
     /* ------------ PAGE BOOK (max-width:500px) - DEBUT ------------ */
 
     .b_historique,
