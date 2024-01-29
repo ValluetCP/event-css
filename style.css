@@ -107,6 +107,7 @@ html {
     width: 500px;
     height: 30px;
     border: solid 1px var(--vertFonce);
+    background-color: transparent;
 }
 
 #recherche::placeholder{
@@ -303,7 +304,6 @@ background-color: rgba(255, 255, 255, 0.5);
 
 .nav2_menu{
     margin-top: 54px;
-    padding: 0 81px;
 }
 
 .nav2_menu ul{
@@ -315,7 +315,7 @@ background-color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     font-family: 'Karla', sans-serif; 
     color: var(--vertHover);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
     transition: all 0.25s ease-in-out;
@@ -1076,14 +1076,14 @@ background-color: rgba(255, 255, 255, 0.5);
 
 
 /* Fiche produit */
-.droite h1{
+.droite h1 {
     font-family: 'AmericanaRegular';
     color: var(--vertMoyen);
     font-size: 60px;
     /* font-size: 72px; */
     text-align: center;
     margin-top: 60px;
-    padding: 0 51px;
+    padding: 0 13px;
 }
 
 .droite h2{
@@ -1106,7 +1106,7 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 
 .droite h4{
-    font-size: 32px;
+    font-size: 25px;
     margin-bottom: 10px;
     font-family: 'AmericanaRegular';
     color: var(--vertFonceMoin);
@@ -1230,9 +1230,10 @@ select::-ms-expand {
 
 .titreCategory{
     font-family: 'AmericanaRegular';
-    font-size: 24px;
+    font-size: 20px;
     color: var(--vertMoyen);
     margin-top: 10px;
+    line-height: 26px;
 }
 
 .sousTitreCategory{
@@ -1241,7 +1242,7 @@ select::-ms-expand {
     font-weight: 200;
     /* font-style: italic; */
     color: var(--vertFonce);
-    margin-top: 5px;
+    margin-top: 12px;
 }
 
 /* ------------ PAGE LIST BOOK - DEBUT ------------ */
@@ -1781,7 +1782,7 @@ padding-left: 624px;
     }
 
     #recherche {
-        width: 460px;
+        width: 268px;
     }
 
     /* -- ESPACE DE NAVIGATION - début-- */
@@ -1932,13 +1933,19 @@ padding-left: 624px;
     }
 
     .hp_header_img1 {
-        bottom: -78px;
-        right: 308px;
+        bottom: 58px;
+        right: 72px;
     }
 
     .hp_header_img2 {
-        bottom: -143px;
-        right: 179px;
+        bottom: 0px;
+        right: 227px;
+    }
+
+    .hp_header_img3 {
+        width: 188px;
+        bottom: 95px;
+        left: 211px;
     }
     /* ------------ HOME PAGE - (max-width:1400px) - FIN ------------ */
     
@@ -1950,6 +1957,56 @@ padding-left: 624px;
     /* ---------- NAV - (max-width:900px) - DEBUT ---------- */
     
     /* -- BARRE DE NAVIGATION - début-- */
+
+    /* page evenement */
+    .navbar #recherche{
+        border: solid 1px var(--vertClair);
+    }
+    
+    .navbar .panier{
+        color: var(--vertClair);
+    }
+
+    .navbar #recherche::placeholder{
+        color: var(--vertClair);
+        opacity: 0.5;
+    }
+
+    #e_trait1,
+    #e_trait2{
+        background-color: var(--vertClair);
+    }
+
+    /* page evenement - scroll*/
+
+    .navbar.scroll #recherche{
+        border: solid 1px var(--vertFonce);
+    }
+
+    .navbar.scroll #e_trait1,
+    .navbar.scroll #e_trait2{
+        background-color: var(--vertFonce);
+    }
+    
+    .navbar.scroll .panier{
+        color: var(--vertFonce);
+    }
+
+    .navbar.scroll #recherche::placeholder{
+        color: var(--vertFonce);
+        opacity: 0.5;
+    }
+
+    /* .navbar.scroll{
+        background-color: #fff;
+        height: 75px;
+    } */
+/* 
+    .navbar.scroll #recherche{
+        border: solid 1px var(--vertFonce);
+    } */
+
+
 
     /* -- ESPACE DE NAVIGATION - début-- */
     
@@ -2346,7 +2403,8 @@ padding-left: 624px;
     /* ---------- NAV - (max-width:500px) - DEBUT ---------- */
     
     /* -- BARRE DE NAVIGATION - début-- */
-    .nav_home_page {
+    .nav_home_page,
+    .navbar {
         padding: 0 116px 0 22px;
     }
 
@@ -2371,6 +2429,7 @@ padding-left: 624px;
     .nav2_container {
         width: 80%;
     }
+
     /* ---------- NAV - (max-width:500px) - FIN ---------- */
 
 
