@@ -66,8 +66,7 @@ html {
     display: none;
 }
 
-
-    
+  
     
 /* -------------- NAVIGATION (event.php) -------------- */
 .nav_home_page,
@@ -84,9 +83,6 @@ html {
     transition: all 0.25s ease-in-out;
     height: 80px;
 }
-
-
-
 
 
 .navigation{
@@ -365,6 +361,16 @@ background-color: rgba(255, 255, 255, 0.5);
     font-weight: 200;
 }
 
+
+/* LIENS ACTIF */
+
+.nav2_menu ul li a.active {
+    font-weight: bold;
+    color: blue;
+}
+
+
+ 
 
 
 
