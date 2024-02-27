@@ -1771,6 +1771,8 @@ padding-left: 624px;
 }
 
 /* ------------ HOME PAGE - (home_page.php) - FIN ------------ */
+
+/* ------------ HOME PAGE ADMIN - (home_page_admin.php) - DEBUT ------------ */
 .hpa_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1795,7 +1797,9 @@ padding-left: 624px;
     text-align: center;
     flex-direction: column;
     height: 100vh;
+    cursor: pointer;
 }
+
 
 
 .hpa_section h1{
@@ -1824,10 +1828,152 @@ padding-left: 624px;
 }
 
 
-
-/* ------------ HOME PAGE ADMIN - (home_page_admin.php) - DEBUT ------------ */
-
 /* ------------ HOME PAGE ADMIN - (home_page_admin.php) - FIN ------------ */
+
+
+/* ------------ HOME PAGE ADMIN 2 - DEBUT ------------ */
+
+
+.hpa_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: fixed;
+}
+
+/* .effet-1 img {
+    width: 100%;
+    opacity: 0.8;
+} */
+
+.hpa_article{
+    height: 100vh; 
+}
+
+.hpa_article figure {
+    margin: 0;
+    /* background-color: #000; */
+    font-size: 0;
+    /* font-size : fait disparaitre la fausse marge (la bordure en bas de l'image) */
+    position: relative;
+    overflow: hidden;
+}
+
+.hpa_figcaption {
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 0;
+    /* il prendra la taille de son parent */
+    width: 100%;
+    /* height: 100%; */
+    padding: 10%;
+    /* box-sizing: border-box; */
+    transform: translateY(25%);
+}
+
+.hpa_figcaption p{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--vertClair);
+    font-family: 'Karla', sans-serif;
+    padding-top: 40px;
+}
+
+.hpa_article figure a {
+    /* pour rendre toute la balise figure cliquable */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/* TEXTE */
+.hpa_figcaption{
+    text-align: center;
+}
+
+.hpa_figcaption h3{
+    font-family: 'AmericanaRegular';
+    font-size: 48px;
+    line-height: 72px;
+    color: var(--vertClair);
+}
+
+.hpa_figcaption h3 span{
+    text-transform: uppercase;
+    font-size: 55px;
+}
+
+
+/* EFFET-1 */
+
+.effet-1 {
+    background-color: #172A23;
+}
+
+.effet-1 h3 {
+    position: relative;
+}
+
+.effet-1 h3:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    bottom: -10px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.effet-1:hover h3:before {
+    -webkit-transform: translateX(0);
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+/* Animation du texte */
+.effet-1 p {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.effet-1:hover p {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Animation de l'img */
+.effet-1 img {
+    /* pour agrandir l'image de 20px pour combler l'écart puisque l'img à été décaler de 20px juste en-dessous */
+    width: calc(100% + 20px);
+}
+
+.effet-1:hover img {
+    opacity: 0.5;
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.effet-1 img,
+.effet-1 p,
+.effet-1 h3:before {
+    -webkit-transition: opacity 0.35s ease-in-out;
+    -webkit-transition: opacity 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out, transform 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out, transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+}
+
+
+/* EFFET-1 */
+
+/* ------------ HOME PAGE ADMIN 2 - FIN ------------ */
 
 
 /* ------------ PAGE INFO PERSO - DEBUT ------------ */
