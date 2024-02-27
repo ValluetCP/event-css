@@ -1770,8 +1770,64 @@ padding-left: 624px;
     padding-top: 0px; 
 }
 
-
 /* ------------ HOME PAGE - (home_page.php) - FIN ------------ */
+.hpa_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.hpa_sect_categorie{
+    background-image: url(./img/voiture_fond_vert.jpg);
+}
+
+.hpa_sect_event{
+    background-image: url(./img/bocal_fond_vert.jpg);
+}
+
+.hpa_sect_user{
+    background-image: url(./img/poisson_fond_vert.jpg);
+}
+
+.hpa_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.hpa_section h1{
+    font-family: 'AmericanaRegular';
+    font-size: 48px;
+    line-height: 72px;
+    color: var(--vertClair);
+}
+
+.hpa_section h1 span{
+    text-transform: uppercase;
+    font-size: 55px;
+}
+
+.hpa_section p a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--vertClair);
+    font-family: 'Karla', sans-serif;
+}
+
+.hpa_section p a::before{
+    content: url(./img/plus.svg);
+    padding-right: 20px;
+}
+
+
+
+/* ------------ HOME PAGE ADMIN - (home_page_admin.php) - DEBUT ------------ */
+
+/* ------------ HOME PAGE ADMIN - (home_page_admin.php) - FIN ------------ */
 
 
 /* ------------ PAGE INFO PERSO - DEBUT ------------ */
