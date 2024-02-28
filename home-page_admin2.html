@@ -6,6 +6,7 @@
     <meta name="description" content="Une phrase d’environ 170 caractères">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -69,32 +70,32 @@
                         <!-- ESPACE NAVIGATION  - MENU (admin & client) -->
                         <div class="nav2_menu">
                             <ul>
-                                <li><a href="#" onclick="showList('listeProfil')">Profil</a></li>
-                                <li><a href="#" onclick="showList('listeAdmin')">Espace Admin</a></li>
-                                <li><a href="#" onclick="showList('listeClient')">Espace Client</a></li>
+                                <li><a href="#" onclick="showList('listeProfil')" class="slide-line">Profil</a></li>
+                                <li><a href="#" onclick="showList('listeAdmin')" class="slide-line">Espace Admin</a></li>
+                                <li><a href="#" onclick="showList('listeClient')" class="slide-line">Espace Client</a></li>
                             </ul>
                         </div>
 
                         <!-- ESPACE NAVIGATION  - LIENS -->
                         <div class="listeProfil hidden list_sous_menu">
-                            <ul>
-                                <li><a href="">Informations personnelles</a></li>
-                                <li><a href="">Factures</a></li>
+                            <ul class="filtre">
+                                <li><a href="" class="profil_info_link">Informations personnelles</a></li>
+                                <li><a href="" class="profil_facture_link">Factures</a></li>
                             </ul>
                         </div>
                         <div class="listeAdmin list_sous_menu">
-                            <ul>
-                                <li><a href="">Accueil</a></li>
-                                <li><a href="">liste des catégories</a></li>
-                                <li><a href="">liste des événements</a></li>
-                                <li><a href="">liste des utilisateurs</a></li>
+                            <ul class="filtre">
+                                <li><a href="" class="admin_accueil_link linkActive">Accueil</a></li>
+                                <li><a href="" class="admin_categorie_link">liste des catégories</a></li>
+                                <li><a href="" class="admin_event_link">liste des événements</a></li>
+                                <li><a href="" class="admin_user_link">liste des utilisateurs</a></li>
                             </ul>
                         </div>
                         <div class="listeClient hidden list_sous_menu">
-                            <ul>
-                                <li><a href="">Accueil</a></li>
-                                <li><a href="">Nos événements</a></li>
-                                <li><a href="">Vos réservations</a></li>
+                            <ul class="filtre">
+                                <li><a href="" class="client_accueil_link">Accueil</a></li>
+                                <li><a href="" class="client_event_link">Nos événements</a></li>
+                                <li><a href="" class="client_book_link">Vos réservations</a></li>
                             </ul>
                         </div>
 
@@ -123,8 +124,8 @@
                     <img src="img/voiture_fond_vert.jpg" alt="">
                     <figcaption class="hpa_figcaption">
                         <h3>Liste des<br><span>catégories</span></h3>
-                        <p>Ajouter, modifier, désactiver, supprimer</p>
-                        <p><a href="">ajouter une catégorie</a></p>
+                        <p>Consulter, modifier, désactiver, supprimer</p>
+                        <h4><a href="">ajouter une catégorie</a></h4>
                     </figcaption>
                     <a href="#"></a>
                     <!-- balise a : technique pour rendre toute la balise figure cliquable. en css on va lui donner 100% la taille de son parent figure -->
@@ -136,8 +137,8 @@
                     <img src="img/bocal_fond_vert.jpg" alt="">
                     <figcaption class="hpa_figcaption">
                         <h3>Liste des<br><span>événements</h3>
-                        <p>Ajouter, modifier, annuler, supprimer</p>
-                        <!-- <p><a href="">ajouter un événement</a></p> -->
+                        <p>Consulter, modifier, annuler, supprimer</p>
+                        <h4><a href="">ajouter un événement</a></h4>
                     </figcaption>
                     <a href="#"></a>
                 </figure>
@@ -148,8 +149,8 @@
                     <img src="img/poisson_fond_vert.jpg" alt="">
                     <figcaption class="hpa_figcaption">
                         <h3>Liste des<br><span>utilisateurs</span></h3>
-                        <p>Ajouter, modifier, désactiver, supprimer</p>
-                        <p><a href="">ajouter un utilisateur</a></p>
+                        <p>Consulter, modifier, désactiver, supprimer</p>
+                        <h4><a href="">ajouter un utilisateur</a></h4>
                     </figcaption>
                     <a href="#"></a>
                 </figure>
