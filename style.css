@@ -1144,7 +1144,9 @@ background-color: rgba(255, 255, 255, 0.5);
     color: var(--vertMoyen);
     font-size: 30px;
     margin-top: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .droite h4{
@@ -1255,27 +1257,51 @@ select::-ms-expand {
 
 /* Zone catégorie */
 
-.trioCategory{
-    display: flex;
-    justify-content: space-between;
+.trioCategory {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
-.trioCategory article{
-    width: 210px;
+.trioCategory article {
+    display: grid;
+    grid-template-rows: auto 63px 25px;
+    gap: 15px;
 }
 
-.imgCategory{
+/* .imgCategory{
     width: 200px;
     height: 300px;
     background-color: var(--vertFonce);
+} */
+
+.imgCategory {
+    width: auto;
+    height: 310px;
+    background-color: var(--vertFonce);
+    overflow: hidden;
 }
 
-.titreCategory{
+.imgCategory img{
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.imgCategory:hover img{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.titreCategory {
     font-family: 'AmericanaRegular';
-    font-size: 20px;
+    font-size: 23px;
     color: var(--vertMoyen);
-    margin-top: 10px;
-    line-height: 26px;
+    /* margin-top: 10px; */
+    line-height: 30px;
 }
 
 .sousTitreCategory{
@@ -1284,7 +1310,7 @@ select::-ms-expand {
     font-weight: 200;
     /* font-style: italic; */
     color: var(--vertFonce);
-    margin-top: 12px;
+    /* margin-top: 12px; */
 }
 
 /* ------------ PAGE LIST BOOK - DEBUT ------------ */
@@ -1298,6 +1324,26 @@ select::-ms-expand {
     padding-top: 136px;
     padding-bottom: 50px;
 }
+
+/* -- BOUTON PROCHAINEMENT & HISTORIQUE (list_book.php) -- */
+
+.navigation_prochainement_historique{
+    display: flex;
+    justify-content: center;
+    font-family: 'AmericanaRegular';
+    font-size: 40px;
+    color: var(--vertMoyen);
+    margin-top: 10px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.prochainement,
+.historique{
+    padding: 20px;
+}
+
 
 /* -- BOUTON FILTRE (list_book.php) -- */
 .filtreCategory {
@@ -1349,6 +1395,10 @@ select::-ms-expand {
 }
 
 #lb_imageEvent_1{
+    background-image: url(./img/event_salon_automobile.jpg);
+}
+
+#lb_imageEvent_2{
     background-image: url(./img/calamar.JPG);
 }
 
@@ -1357,7 +1407,7 @@ select::-ms-expand {
 
 .lb_eventContainer{
     display: flex;
-    margin-top: 30px;
+    margin-top: 22px;
     width: 315px;
     /* width: 303px; */
 }
@@ -1375,7 +1425,7 @@ select::-ms-expand {
 
 .lb_titre{
     font-family: 'AmericanaRegular';
-    font-size: 45px;
+    font-size: 40px;
     color: var(--vertMoyen);
     margin-bottom: 10px;
 }
@@ -1979,6 +2029,10 @@ padding-left: 624px;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     opacity: 0;
+}
+
+.effet-1:hover h3{
+    color: white;
 }
 
 .effet-1:hover h3:before {
