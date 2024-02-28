@@ -1962,6 +1962,7 @@ padding-left: 624px;
 
 .effet-1 {
     background-color: #172A23;
+    height: 100%;
 }
 
 .effet-1 h3 {
@@ -2003,6 +2004,7 @@ padding-left: 624px;
 .effet-1 img {
     /* pour agrandir l'image de 20px pour combler l'écart puisque l'img à été décaler de 20px juste en-dessous */
     width: calc(100% + 20px);
+    height: 100%;
 }
 
 .effet-1:hover img {
