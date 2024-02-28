@@ -134,10 +134,10 @@
         <!-- ESPACE DE NAVIGATION - fin -->
     </nav>
     
-    <main class="site">
+    <main class="site siteEvent">
         <!-- SECTION GAUCHE - IMAGE FIXE -->
-        <section class="gauche">
-            <div class="gaucheImg"></div>
+        <section class="gauche gaucheEvent">
+            <div class="gaucheImg gaucheImgEvent"></div>
         </section>
 
         <!-- SECTION DROITE - FICHE PRODUIT -->
@@ -187,11 +187,14 @@
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip. 
                 </p>
-                <p class="statePlace">
+                <!-- <p class="statePlace">
                     Nombre de place disponible : <span>23</span><br>
                     Nombre de place totale : 40 <br>
                     Nombre de place réservée : 15 <br>
-                </p>
+                </p> -->
+                <div class="placeDisponible">
+                    Place disponible : <span>23</span><br>
+                </div>
                 <div class="place_prix">
                     <div class="prixSelect">
                         <!-- https://codepen.io/mrphang/pen/XWxKdpV -->
@@ -204,8 +207,10 @@
                         <p>Prix : 75€</p>
                     </div>
                 </div>
-                <button type="button" class="reserve">Réserver</button>
-                <button onclick="window.location.href='#modalEvent'" type="button" class="reserve">Ajouter une réservation</button>
+                <div class="btn_flex">
+                    <!-- <button type="button" class="reserve  btnEvent btnEvent-3">Réserver</button> -->
+                    <button onclick="window.location.href='#modalEvent'" type="button" class="reserve btnEvent btnEvent-3">Ajouter une réservation</button>
+                </div>
                 <h3>Vous pourriez aimer . . .</h3>
                 <div class="trioCategory">
                     <article class="categoryUn">
