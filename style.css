@@ -1210,12 +1210,12 @@ background-color: rgba(255, 255, 255, 0.5);
 .prix p,
 .place p{
     font-family: 'AmericanaRegular';
-    font-size: 22px;
+    font-size: 19px;
     color: var(--vertFonceMoin);
 }
 
 .place p{
-    padding-left: 18px;
+    padding-left: 21px;
 }
 
 .prix p span{
