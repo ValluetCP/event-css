@@ -1219,7 +1219,9 @@ select::-ms-expand {
 .prixSelect{
     font-size: 18px;
     font-family: 'Karla', sans-serif;
-    font-weight: 200; 
+    font-weight: 200;
+    display: flex;
+    align-items: center;
 }
 
 .prixSelect::after{
@@ -1245,10 +1247,19 @@ select::-ms-expand {
 }
 
 
-.prix p{
+.prix p,
+.place p{
     font-family: 'AmericanaRegular';
     font-size: 22px;
     color: var(--vertFonceMoin);
+}
+
+.place p{
+    padding-left: 10px;
+}
+
+.prix p span{
+    font-size: 18px;
 }
 
 .placeDisponible{
@@ -1265,6 +1276,59 @@ select::-ms-expand {
     font-weight: 400;
     padding-left: 10px;
 }
+
+/* TEST bouton SELECT */
+
+.ui-dropdown select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: solid 1px #172A23;
+    outline: none;
+    padding: 5px 20px 5px 12px;
+    position: relative;
+    width: 110%;
+
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+  }
+  .ui-dropdown {
+    /* margin-top: 100px; */
+    position: relative;
+    width: 60px;
+  /*   height: 55px */
+  }
+  .ui-dropdown:before {
+    content: 'Custom Dropdown Demo';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    font-size: 20px;
+  }
+  .ui-dropdown:after {
+    background-color: #172A23;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: solid 1px #172A23;
+    color: #fff;
+    content: '▼';
+    display: block;
+    font-size: 10px;
+    width: 33px;
+    padding: 7px 0px;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    right: 0;
+    margin-right: -5px;
+}
+
+
+
+/* BOUTON DE VALIDATION RESERVATION - ancien code */
 
 /* Bouton */
 /* .reserve{
@@ -1283,6 +1347,8 @@ select::-ms-expand {
     margin-bottom: 10px;
 } */
 
+
+/* BOUTON DE VALIDATION RESERVATION */
 .btn_flex{
     display: flex;
     justify-content: center;
