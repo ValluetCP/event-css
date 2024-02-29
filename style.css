@@ -2291,8 +2291,23 @@ padding-left: 624px;
 
 /* EVENT */
     .containerDroit {
-        width: 500px;
+        max-width: 620px;
         padding: 0 30px;
+    }
+    
+    /* .containerDroitEvent {
+        max-width: 600px;
+        padding: 0 30px;
+    } */
+
+    .trioCategory {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 58px;
+    }
+
+    .trioCategory article {
+        grid-template-rows: auto 32px 25px;
     }
 
     .bgEtat {
@@ -2372,13 +2387,12 @@ padding-left: 624px;
 }
 
 
-@media screen and (max-width:900px) {
+/* ---------------------- (max-width: 1200px) - DEBUT ---------------------- */
+@media screen and (max-width:1200px) {
 
-    /* ---------- NAV - (max-width:900px) - DEBUT ---------- */
-    
-    /* -- BARRE DE NAVIGATION - début-- */
+    /* --- PAGE EVENT - evenement.html (max-width: 1200px) --- */
 
-    /* page evenement */
+    /* - PAGE EVENT - Navbar (1200px) - */
     .navbar #recherche{
         border: solid 1px var(--vertClair);
     }
@@ -2397,7 +2411,7 @@ padding-left: 624px;
         background-color: var(--vertClair);
     }
 
-    /* page evenement - scroll*/
+    /* - PAGE EVENT - scroll (1200px) - */
 
     .navbar.scroll #recherche{
         border: solid 1px var(--vertFonce);
@@ -2416,6 +2430,79 @@ padding-left: 624px;
         color: var(--vertFonce);
         opacity: 0.5;
     }
+
+     /* - PAGE EVENT - main (1200px) - */
+    .site{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "gauche"
+        "droite";
+    }
+
+    /* - PAGE EVENT - section gauche (1200px) - */
+    .gauche{
+        width: 100%;
+        height: 100%;
+    }
+
+    .gaucheImg {
+        width: 100%;
+    }
+
+    /* - PAGE EVENT - section droite (1200px) - */
+    .droite{
+        position: absolute;
+        top: 78%;
+        background-color: white;
+        width: 100%;
+    }
+
+    .containerDroit {
+        width: 100%;
+        padding: 45px 30px;
+        max-width: 871px;
+        margin: auto;
+    }
+
+    /* - PAGE EVENT - section catégorie (1200px) - */
+    .trioCategory {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .trioCategory article {
+        grid-template-rows: auto 63px 25px;
+    }
+
+}
+
+/* ---------------------- (max-width: 1200px) - FIN ---------------------- */
+
+
+/* ---------------------- (max-width: 900px) - DEBUT ---------------------- */
+
+@media screen and (max-width:900px) {
+
+    /* --- PAGE EVENT - evenement.html (max-width: 900px) --- */
+
+    /* - PAGE EVENT - section catégorie (900px) - */
+    .imgCategory {
+        height: auto;
+    }
+
+    .titreCategory {
+        font-size: 21px;
+    }
+
+    .trioCategory article {
+        gap: 8px;
+    }
+
+    /* ---------- NAV - (max-width:900px) - DEBUT ---------- */
+    
+    /* -- BARRE DE NAVIGATION - début-- */
+
+    
 
     /* .navbar.scroll{
         background-color: #fff;
@@ -2448,46 +2535,7 @@ padding-left: 624px;
         width: 230px;
     }
 
-    /* MAIN */
-    .site{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "gauche"
-        "droite";
-    }
-
-    /* GAUCHE */
-    .gauche{
-        width: 100%;
-        height: 100%;
-    }
-
-    .gaucheImg {
-        width: 100%;
-    }
-
-
-    /* DROITE */
-    .droite{
-        position: absolute;
-        top: 78%;
-        background-color: white;
-    }
-
-    .containerDroit {
-        width: 100%;
-        padding: 45px 30px;
-    }
-
-    /* SECTION CATEGORIE */
-    .categoryTrois{
-        display: block;
-    }
-
-    .trioCategory article {
-        width: 200px;
-    }
-
+   
     /* ------------ PAGE LIST BOOK (max-width:900px) - DEBUT ------------ */
 
     .lb_event{
@@ -2645,6 +2693,10 @@ padding-left: 624px;
     }
 }
 
+/* ---------------------- (max-width: 900px) - FIN ---------------------- */
+
+
+/* ---------------------- (max-width: 700px) - DEBUT ---------------------- */
 
 @media screen and (max-width:700px) {
 
@@ -2765,9 +2817,9 @@ padding-left: 624px;
     }
 
     /* bouton réservé */
-    .reserve {
+    /* .reserve {
         width: 295px;
-    }
+    } */
 
     /* SECTION CATEGORIE */
     
@@ -2833,6 +2885,9 @@ padding-left: 624px;
     /* ------------ PAGE BOOK (max-width:700px) - FIN ------------ */
     
 }
+
+
+/* ---------------------- (max-width: 700px) - FIN ---------------------- */
 
 @media screen and (max-width:500px){
 
@@ -2964,9 +3019,9 @@ padding-left: 624px;
     }
 
     /* BOUTON DE RESERVATION */
-    .reserve {
+    /* .reserve {
         width: 265px;
-    }
+    } */
     /* ------------ PAGE EVENT (max-width:415px) - FIN ------------ */
 
 
