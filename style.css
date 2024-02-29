@@ -100,7 +100,7 @@ html {
 }
 
 #recherche{
-    width: 500px;
+    width: 286px;
     height: 30px;
     border: solid 1px var(--vertFonce);
     background-color: transparent;
@@ -1033,7 +1033,7 @@ background-color: rgba(255, 255, 255, 0.5);
 
 .gaucheImg{
     grid-area: gauche;
-    background-image: url(./img/calamar.JPG);
+    background-image: url(./img/event_bocal.jpg);
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -1122,8 +1122,8 @@ background-color: rgba(255, 255, 255, 0.5);
     background-color: var(--vertFonce);
     margin: auto;
     margin-bottom: 60px;
-    width: 298px;
-    height: 447px;
+    width: 376px;
+    height: auto;
     /* width: 470px;
     height: 700px; */
 }
@@ -1202,50 +1202,10 @@ background-color: rgba(255, 255, 255, 0.5);
     justify-content: space-between;
     margin-top: 80px;
     margin-bottom: 80px;
-}
-
-/* --- SELECT  - Nbr de place---  */
-#place{
-    width: 35px;
-    height: 30px;
-    border: solid 1px #172A23;
-}
-
-/* Remove IE arrow */
-select::-ms-expand {
-    display: none;
-  }
-
-.prixSelect{
-    font-size: 18px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 200;
-    display: flex;
     align-items: center;
 }
 
-.prixSelect::after{
-    font-size: 18px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 200;  
-}
-
-
-.prixSelect select{
-    font-size: 18px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 200;
-    text-align: center;
-
-    /* Reset Select */
-    appearance: none;
-
-    /* Personalize */
-    cursor: pointer;
-    /* background-color: var(--vertClair); */
-    border-color: var(--vertNavTrait);
-}
-
+/* --- Page event - Prix et nbr de place --- */
 
 .prix p,
 .place p{
@@ -1255,13 +1215,15 @@ select::-ms-expand {
 }
 
 .place p{
-    padding-left: 10px;
+    padding-left: 18px;
 }
 
 .prix p span{
     font-size: 18px;
 }
 
+
+/* --- Page event - encadré place disponible --- */
 .placeDisponible{
     display: inline;
     background-color: var(--vertFonce);
@@ -1277,7 +1239,7 @@ select::-ms-expand {
     padding-left: 10px;
 }
 
-/* TEST bouton SELECT */
+/* --- Page event - bouton SELECT --- */
 
 .ui-dropdown select {
     -webkit-appearance: none;
@@ -1287,7 +1249,7 @@ select::-ms-expand {
     outline: none;
     padding: 5px 20px 5px 12px;
     position: relative;
-    width: 110%;
+    width: 115%;
 
     font-size: 18px;
     font-family: 'Karla', sans-serif;
@@ -1299,31 +1261,33 @@ select::-ms-expand {
     width: 60px;
   /*   height: 55px */
   }
-  .ui-dropdown:before {
-    content: 'Custom Dropdown Demo';
-    position: absolute;
-    top: -50px;
-    left: 0;
-    font-size: 20px;
-  }
+
   .ui-dropdown:after {
     background-color: #172A23;
     -moz-border-radius: 0;
     border-radius: 0;
     border: solid 1px #172A23;
     color: #fff;
-    content: '▼';
+    content: url(img/fleche.svg);
+    /* content: '▼'; */
     display: block;
     font-size: 10px;
     width: 33px;
     padding: 7px 0px;
+    padding-top: 11px;
     position: absolute;
     pointer-events: none;
     top: 0;
     bottom: 0;
     text-align: center;
     right: 0;
-    margin-right: -5px;
+    margin-right: -8px;
+}
+
+/* --- Page event - SELECT texte --- */
+.placeSelect{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -1425,7 +1389,8 @@ select::-ms-expand {
 }
 
 .trioCategory article:hover div{
-    color: red;
+    color: #bed856;
+    color: #79914b;
 }
 
 /* .imgCategory{
@@ -1725,7 +1690,7 @@ select::-ms-expand {
 }
 
 .containerDroit h2{
-    margin-bottom: 75px;
+    margin-bottom: 35px;
     margin-top: 20px;
 }
 
@@ -2354,34 +2319,42 @@ padding-left: 624px;
     
     
 
+    /* --- PAGE EVENT - evenement.html (max-width: 1400px) --- */
 
-/* EVENT */
+    /* - PAGE EVENT - section droite (1400px) - */
     .containerDroit {
         max-width: 620px;
         padding: 0 30px;
     }
     
-    /* .containerDroitEvent {
-        max-width: 600px;
-        padding: 0 30px;
-    } */
 
-    .trioCategory {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 58px;
-    }
-
-    .trioCategory article {
-        grid-template-rows: auto 32px 25px;
-    }
-
+    /* - PAGE EVENT - état réservation (1400px) - */
     .bgEtat {
         width: 460px;
     }
 
+    /* - PAGE EVENT - section catégorie (1400px) - */
+    .titreCategory {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .trioCategory {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 11px;
+    }
+
+    .trioCategory article {
+        grid-template-rows: auto 44px 25px;
+    }
+
     .categoryTrois{
         display: none;
+    }
+
+    .imgCategory {
+        height: auto;
     }
 
 
@@ -2845,8 +2818,8 @@ padding-left: 624px;
     }
     /* ------------ MODAL PANIER (max-width:700px) - FIN ------------ */
 
-
-    /* NAV */
+    /* --- PAGE EVENT - evenement.html (max-width: 700px) --- */
+    /* - PAGE EVENT - navbar (700px) - */
     #recherche {
         display: none;
     }
@@ -2855,15 +2828,15 @@ padding-left: 624px;
         padding: 0 25px;
     }
 
-    /* DROITE */
-
+    /* - PAGE EVENT - Section droite (700px) - */
     .droite h1 {
         font-size: 40px;
     }
 
-    .droite h3{
+    /* .droite h3{
         display: none;
-    }
+    } */
+
     .droite{
         top: 70%;
     }
@@ -2878,23 +2851,34 @@ padding-left: 624px;
     }
 
     .droite p {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 19px;
+        line-height: 25px;
     }
 
-    /* bouton réservé */
-    /* .reserve {
-        width: 295px;
-    } */
+    /* - PAGE EVENT - prix (700px) - */
+    .place_prix {
+        display: block;
+    }
 
-    /* SECTION CATEGORIE */
+    .prix{
+        margin-top: 18px;
+    }
+
     
+    /* - PAGE EVENT - section catégorie (700px) - */
+    .trioCategory {
+        grid-template-columns: 1fr;
+        gap: 58px;
+    }
 
     .trioCategory article {
-        display: none;
+        grid-template-rows: auto 43px 25px;
     }
 
-    /* ------------ PAGE LIST BOOK (max-width:700px) - DEBUT ------------ */
+
+
+
+    /* --- PAGE LIST BOOK (max-width:700px) - DEBUT --- */
 
 
     /* -- FILTRE CATEGORIE (list_book.php) -- */
