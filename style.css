@@ -1124,8 +1124,26 @@ background-color: rgba(255, 255, 255, 0.5);
     margin-bottom: 60px;
     width: 376px;
     height: auto;
+    overflow: hidden;
     /* width: 470px;
     height: 700px; */
+}
+
+.imgEvent a img{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    content: "f065";
+}
+
+.imgEvent a img::after{
+    content: "f065";
+    
+}
+
+.imgEvent a img:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
 }
 
 
@@ -1389,7 +1407,7 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 
 .trioCategory article:hover div{
-    color: #bed856;
+    /* color: #bed856; */
     color: #79914b;
 }
 
