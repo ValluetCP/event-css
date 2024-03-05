@@ -318,7 +318,7 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 
 .nav2_menu ul a:hover{
-    color: var(--vertClair);
+    color: blue;
 }
     
     
@@ -366,22 +366,23 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 
 
-/* LIENS ACTIF */
+/* LIENS ACTIF - class active */
 
 .nav2_menu ul li a.active {
-    color: white;
+    color: blue;
     position: relative;
 }
 
 .nav2_menu ul li a.active::before {
     content: "";
     position: absolute;
-    background: white;
-    width: 100%;
-    height: 2px;
+    background: blue;
+    width: 4px;
+    height: 4px;
     bottom: -10px;
     transform-origin: 100% 0;
     transform: scaleX(1);
+    border-radius: 50%;
 }
 
 /* ANIMATION LIENS */
@@ -392,7 +393,7 @@ background-color: rgba(255, 255, 255, 0.5);
 .slide-line::before{
     content: "";
     position: absolute;
-    background: white;
+    background: blue;
     width: 100%;
     height: 2px;
     bottom: -10px;
@@ -404,6 +405,28 @@ background-color: rgba(255, 255, 255, 0.5);
 
 .slide-line:hover::before{
     transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
+/* LIENS ACTIF - class activeLink */
+
+/* .nav2_menu ul li .activeMenuLink{
+    color: red;
+} */
+
+.nav2_menu ul li a.activeMenuLink {
+    color: white;
+    position: relative;
+}
+
+.nav2_menu ul li a.activeMenuLink::before {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    transform-origin: 100% 0;
     transform: scaleX(1);
 }
  

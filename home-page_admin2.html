@@ -70,32 +70,32 @@
                         <!-- ESPACE NAVIGATION  - MENU (admin & client) -->
                         <div class="nav2_menu">
                             <ul>
-                                <li><a href="#" onclick="showList('listeProfil')" class="slide-line">Profil</a></li>
-                                <li><a href="#" onclick="showList('listeAdmin')" class="slide-line">Espace Admin</a></li>
-                                <li><a href="#" onclick="showList('listeClient')" class="slide-line">Espace Client</a></li>
+                                <li id="menu_profil"><a href="#" onclick="showList('listeProfil')" class="slide-line">Profil</a></li>
+                                <li id="menu_admin"><a href="#" onclick="showList('listeAdmin')" class="slide-line activeMenuLink">Espace Admin</a></li>
+                                <li id="menu_client"><a href="#" onclick="showList('listeClient')" class="slide-line">Espace Client</a></li>
                             </ul>
                         </div>
 
                         <!-- ESPACE NAVIGATION  - LIENS -->
                         <div class="listeProfil hidden list_sous_menu">
                             <ul class="filtre">
-                                <li><a href="" class="profil_info_link">Informations personnelles</a></li>
-                                <li><a href="" class="profil_facture_link">Factures</a></li>
+                                <li><a href="" class="profil_info_link sous_menu_profil">Informations personnelles</a></li>
+                                <li><a href="" class="profil_facture_link sous_menu_profil">Factures</a></li>
                             </ul>
                         </div>
                         <div class="listeAdmin list_sous_menu">
                             <ul class="filtre">
-                                <li><a href="" class="admin_accueil_link linkActive">Accueil</a></li>
-                                <li><a href="" class="admin_categorie_link">liste des catégories</a></li>
-                                <li><a href="" class="admin_event_link">liste des événements</a></li>
-                                <li><a href="" class="admin_user_link">liste des utilisateurs</a></li>
+                                <li><a href="" class="admin_accueil_link sous_menu_admin linkActive">Accueil</a></li>
+                                <li><a href="" class="admin_categorie_link sous_menu_admin">liste des catégories</a></li>
+                                <li><a href="" class="admin_event_link sous_menu_admin">liste des événements</a></li>
+                                <li><a href="" class="admin_user_link sous_menu_admin">liste des utilisateurs</a></li>
                             </ul>
                         </div>
                         <div class="listeClient hidden list_sous_menu">
                             <ul class="filtre">
-                                <li><a href="" class="client_accueil_link">Accueil</a></li>
-                                <li><a href="" class="client_event_link">Nos événements</a></li>
-                                <li><a href="" class="client_book_link">Vos réservations</a></li>
+                                <li><a href="" class="client_accueil_link sous_menu_client">Accueil</a></li>
+                                <li><a href="" class="client_event_link sous_menu_client">Nos événements</a></li>
+                                <li><a href="" class="client_book_link sous_menu_client">Vos réservations</a></li>
                             </ul>
                         </div>
 
