@@ -2249,7 +2249,9 @@ padding-left: 624px;
 
 
 
-/* ------------ LISTE EVENT - DEBUT ------------ */
+/* ------------ LISTE EVENT (test_list.html/list_event.php)- DEBUT ------------ */
+
+/* Header de liste event */
 
 .siteListEvent {
     display: grid;
@@ -2270,7 +2272,7 @@ padding-left: 624px;
 
 .ImgHauteListEvent {
     grid-area: haut;
-    background-image: url(./img/event_bocal.jpg);
+    background-image: url(./img/event_horizontal_cocktail.jpg);
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -2285,6 +2287,7 @@ padding-left: 624px;
     margin-top: 100vh;
     /* margin-top: 46%; */
     z-index: 0;
+    height: 100vh;
     background-color: white;
 }
 
@@ -2318,6 +2321,110 @@ padding-left: 624px;
     margin-top: 80px;
     line-height: 22px;
     padding: 0 20px;
+}
+
+/* Affichage de la liste des events */
+
+/* CONTAINER LIST EVENT */
+.container_listEvent{
+    max-width: 1201px;
+    margin: auto;
+    padding: 0 20px;
+    margin-top: 80px;
+}
+
+/* MODULE pour la boucle */
+.module_listEvent{
+    width: 100%;
+    border-top: solid 1px var(--vertFonce);
+    padding: 8px 0px;
+    display: grid;
+    grid-template-columns: 205px auto 100px;
+    gap: 50px;
+}
+
+/* MODULE - partie gauche - image */
+/* .img_listEvent{
+    background-image: url(./img/coco2.JPG);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 132px;
+    background-position: center;
+    position: relative;
+    background-size: cover; 
+} */
+
+
+/* MODULE - partie centrale - texte */
+.center_txt_listEvent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt_container_listEvent{
+    display: flex;
+}
+
+/* numéro */
+.num_listEvent{
+    font-family: 'AmericanaRegular';
+    font-size: 21px;
+    color: var(--vertMoyen);
+    padding: 5px;
+    padding-right: 10px;
+}
+
+/* titre */
+.titre_listEvent{
+    font-family: 'AmericanaRegular';
+    /* font-size: 34px; */
+    font-size: 40px;
+    color: var(--vertMoyen);
+    margin-bottom: 20px;
+}
+
+
+/* date / category */
+.ss_titre_listEvent{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    color: var(--vertMoyen);
+    margin-bottom: 5px;
+}
+
+.category{
+    text-transform: uppercase;
+}
+
+/* MODULE - partie droite - tarif & état */
+.tarif_etat_listEvent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.etat_listEvent{
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--vertClair);
+    background-color: var(--vertMoyen);
+    width: 100%;
+    padding: 5px 0;
+}
+
+.tarif_listEvent{
+    font-family: 'AmericanaRegular';
+    font-size: 17px;
+    color: var(--vertMoyen);
+    text-align: end;
+    letter-spacing: 1px;
 }
 
 
