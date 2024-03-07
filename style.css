@@ -1157,6 +1157,7 @@ background-color: rgba(255, 255, 255, 0.5);
     opacity: 1;
     transform: scale(1);
     transition: 0.3s ease-in-out;
+    /* icone agrandir */
     content: "f065";
 }
 
@@ -2251,6 +2252,7 @@ padding-left: 624px;
 
 /* ------------ LISTE EVENT (test_list.html/list_event.php)- DEBUT ------------ */
 
+/* --- PARTIE HAUTE --- */
 /* Header de liste event */
 
 .siteListEvent {
@@ -2281,13 +2283,13 @@ padding-left: 624px;
     opacity: 0.3;
 }
 
-.bas {
+.bas{
     grid-area: bas;
     /* margin: auto; */
     margin-top: 100vh;
     /* margin-top: 46%; */
     z-index: 0;
-    height: 100vh;
+    height: 100%;
     background-color: white;
 }
 
@@ -2323,6 +2325,37 @@ padding-left: 624px;
     padding: 0 20px;
 }
 
+/* --- PARTIE BASSE --- */
+
+/* Zone filtre */
+.container_btnFiltre_listEvent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.btnProchainHistorique a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    color: var(--vertMoyen);
+    text-transform: uppercase;
+}
+
+.historique_listEvent{
+    padding-left: 25px;
+}
+
+.historique_listEvent{
+    padding-left: 25px;
+    font-weight: 200;
+}
+
+.prochainement_listEvent{
+    font-weight: 500;
+}
+
 /* Affichage de la liste des events */
 
 /* CONTAINER LIST EVENT */
@@ -2331,6 +2364,14 @@ padding-left: 624px;
     margin: auto;
     padding: 0 20px;
     margin-top: 80px;
+}
+
+.overflow_listEvent {
+    min-height: 760px;
+    overflow: hidden;
+    position: relative;
+    /* overflow-y: scroll; */
+    background-color: #fff;
 }
 
 /* MODULE pour la boucle */
@@ -2344,6 +2385,23 @@ padding-left: 624px;
 }
 
 /* MODULE - partie gauche - image */
+
+.img_listEvent{
+    background-color: var(--vertFonce);
+    overflow: hidden;
+}
+
+.img_listEvent img{
+    opacity: 0.9;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.img_listEvent img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
 /* .img_listEvent{
     background-image: url(./img/coco2.JPG);
     background-repeat: no-repeat;
@@ -2425,6 +2483,15 @@ padding-left: 624px;
     color: var(--vertMoyen);
     text-align: end;
     letter-spacing: 1px;
+}
+
+/* DEGRADE BLANC */
+.degrade_listEvent {
+    background-image: linear-gradient(transparent, white);
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -2647,11 +2714,25 @@ padding-left: 624px;
         bottom: 95px;
         left: 211px;
     }
+
     /* --- HISTORIQUE - (max-width:1400px)--- */
     
     #b_containerDroit {
         width: 550px;
     }
+
+    /* --- LISTE EVENT - (max-width:1400px)--- */
+    /* partie haute */
+    .titreListEvent h1 {
+        font-size: 114px;
+    }
+
+    /* partie basse */
+    .module_listEvent {
+        gap: 20px;
+    }
+
+
 }
 
 
@@ -2742,6 +2823,15 @@ padding-left: 624px;
         grid-template-rows: auto 63px 25px;
     }
 
+
+    /* --- LISTE EVENT - (max-width:1200px)--- */
+    /* partie haute */
+    .titreListEvent h1 {
+        font-size: 83px;
+        line-height: 106px;
+    }
+    
+
 }
 
 /* ---------------------- (max-width: 1200px) - FIN ---------------------- */
@@ -2818,7 +2908,7 @@ padding-left: 624px;
     /* -- FILTRE CATEGORIE (list_book.php) -- */
     .filtreCategory {
         margin-left: 30px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 
     /* -- IMAGE EN BACKGROUND (list_book.php) -- */
@@ -2958,6 +3048,44 @@ padding-left: 624px;
     
     #b_containerDroit {
         max-width: 900px;
+    }
+
+    /* --- LISTE EVENT - (max-width:900px)--- */
+    /* partie haute */
+    .titreListEvent h1 {
+        font-size: 52px;
+        line-height: 75px;
+    }
+    
+    .titreListEvent h2 {
+        font-size: 25px;
+    }
+
+    /* partie basse */
+
+    .module_listEvent{
+        width: 100%;
+        border-top: solid 1px var(--vertFonce);
+        padding: 8px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .module_listEvent {
+        gap: 20px;
+    }
+
+    .tarif_etat_listEvent {
+        flex-direction: row-reverse;
+    }
+
+    .etat_listEvent {
+        width: 20%;
+    }
+
+    .tarif_listEvent {
+        width: 20%;
     }
 }
 
