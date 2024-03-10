@@ -82,7 +82,7 @@
                     <div class="img_listEvent"><img src="./img/event_bateau.jpg" alt=""></div>
     
                     <!-- MODULE - partie centrale - texte -->
-                    <div class="center_txt_listEvent">
+                    <div class="center_txt_listEvent petit_ecran_listEvent">
                         <div class="txt_container_listEvent">
                             <!-- numéro -->
                             <div class="num_listEvent">01</div>
@@ -98,10 +98,38 @@
                     </div>
     
                     <!-- MODULE - partie droite - tarif & état -->
-                    <div class="tarif_etat_listEvent">
+                    <div class="tarif_etat_listEvent petit_ecran_listEvent">
                         <div class="tarif_listEvent">Tarif: 75€</div>
                         <div class="etat_listEvent">Complet</div>
                     </div>
+
+
+                    <!-- MODULE RESPONSIVE- CONTAINER REVERSE (partie centrale & droite) -->
+                    <div class="petit_ecran_listEvent">
+        
+                        <!-- MODULE - partie droite - tarif & état -->
+                        <div class="tarif_etat_listEvent">
+                            <div class="tarif_listEvent">Tarif: 75€</div>
+                            <div class="etat_listEvent">Complet</div>
+                        </div>
+        
+                        <!-- MODULE - partie centrale - texte -->
+                        <div class="center_txt_listEvent">
+                            <div class="txt_container_listEvent">
+                                <!-- numéro -->
+                                <div class="num_listEvent">01</div>
+                                <div class="txt_listEvent">
+                                    <div class="titre_listEvent">Calamar gourmand</div>
+                                    <!-- date / category -->
+                                    <div class="ss_titre_listEvent">
+                                        <div class="category">Atelier</div>
+                                        <div class="date">29-05-2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
     
                 <!-- MODULE 2 -->

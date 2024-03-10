@@ -2392,7 +2392,7 @@ padding-left: 624px;
 }
 
 .img_listEvent img{
-    opacity: 0.9;
+    opacity: 0.8;
     transform: scale(1);
     transition: 0.3s ease-in-out;
 }
@@ -2412,6 +2412,11 @@ padding-left: 624px;
     background-size: cover; 
 } */
 
+
+/* MODULE - CONTAINER REVERSE (partie centrale & droite) */
+.petit_ecran_listEvent{
+    display: none;
+}
 
 /* MODULE - partie centrale - texte */
 .center_txt_listEvent{
@@ -3069,10 +3074,6 @@ padding-left: 624px;
         padding: 8px 0px;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .module_listEvent {
         gap: 20px;
     }
 
