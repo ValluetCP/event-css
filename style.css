@@ -3068,13 +3068,25 @@ padding-left: 624px;
 
     /* partie basse */
 
+    /* filtre */
+    .filtreCategory {
+        margin-left: 0px;
+    }
+
+    .btnProchainHistorique {
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* liste */
     .module_listEvent{
         width: 100%;
         border-top: solid 1px var(--vertFonce);
         padding: 8px 0px;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 10px;
     }
 
     .tarif_etat_listEvent {
@@ -3082,11 +3094,23 @@ padding-left: 624px;
     }
 
     .etat_listEvent {
-        width: 20%;
+        width: 100px;
     }
 
     .tarif_listEvent {
-        width: 20%;
+        width: 1;
+    }
+
+    .grand_ecran_listEvent{
+        display: none;
+    }
+
+    .petit_ecran_listEvent{
+        display: block;
+    }
+
+    .center_txt_listEvent {
+        margin: 50px 0 60px;
     }
 }
 
@@ -3291,7 +3315,30 @@ padding-left: 624px;
     }
 
     /* ------------ PAGE BOOK (max-width:700px) - FIN ------------ */
+
+    /* --- LISTE EVENT - (max-width:700px)--- */
+    /* partie haute */
+
+    /* partie basse */
+
     
+
+    .titre_listEvent {
+        font-size: 35px;
+    }
+    
+    .num_listEvent {
+        font-size: 16px;
+    }
+
+    .container_btnFiltre_listEvent {
+        display: block;
+    }
+
+    .btnProchainHistorique {
+        margin-bottom: 35px;
+    }
+
 }
 
 
@@ -3480,4 +3527,25 @@ padding-left: 624px;
 
 
     /* ------------ PAGE LIST BOOK (max-width:415px) - FIN ------------ */
+
+
+    /* --- LISTE EVENT - (max-width:415px)--- */
+    /* partie haute */
+
+    /* partie basse */
+    .titre_listEvent {
+        font-size: 26px;
+    }
+
+    .ss_titre_listEvent {
+        font-size: 14px;
+    }
+
+    .center_txt_listEvent {
+        margin: 40px 0 40px;
+    }
+
+    .num_listEvent {
+        font-size: 12px;
+    }
 }

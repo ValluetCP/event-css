@@ -82,7 +82,7 @@
                     <div class="img_listEvent"><img src="./img/event_bateau.jpg" alt=""></div>
     
                     <!-- MODULE - partie centrale - texte -->
-                    <div class="center_txt_listEvent petit_ecran_listEvent">
+                    <div class="center_txt_listEvent grand_ecran_listEvent">
                         <div class="txt_container_listEvent">
                             <!-- numéro -->
                             <div class="num_listEvent">01</div>
@@ -98,13 +98,13 @@
                     </div>
     
                     <!-- MODULE - partie droite - tarif & état -->
-                    <div class="tarif_etat_listEvent petit_ecran_listEvent">
+                    <div class="tarif_etat_listEvent grand_ecran_listEvent">
                         <div class="tarif_listEvent">Tarif: 75€</div>
                         <div class="etat_listEvent">Complet</div>
                     </div>
 
 
-                    <!-- MODULE RESPONSIVE- CONTAINER REVERSE (partie centrale & droite) -->
+                    <!-- MODULE RESPONSIVE - PETIT ECRAN (partie centrale & droite) -->
                     <div class="petit_ecran_listEvent">
         
                         <!-- MODULE - partie droite - tarif & état -->
