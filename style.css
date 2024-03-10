@@ -2491,13 +2491,13 @@ padding-left: 624px;
 }
 
 /* DEGRADE BLANC */
-.degrade_listEvent {
+/* .degrade_listEvent {
     background-image: linear-gradient(transparent, white);
     width: 100%;
     height: 200px;
     position: absolute;
     bottom: 0;
-}
+} */
 
 
 /* ------------ LISTE EVENT - FIN ------------ */

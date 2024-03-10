@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
-    <title>Liste des événements</title>
+    <title>Liste réservation</title>
     <meta name="description" content="Une phrase d’environ 170 caractères">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -27,8 +27,8 @@
         <div class="ImgHauteListEvent">
         </div>
         <div class="titreListEvent">
-            <h1>tous nos événements</h1>
-            <h2>sont à découvrir</h2>
+            <h1>Vos réservations</h1>
+            <h2>sont disponibles</h2>
 
             <!-- <p>
                 Plongez dans un monde d'expériences exclusives et inoubliables où chaque moment est une découverte. Assistez à des concerts privés, privatisez des lieux insolites et d'exception, et vivez des compétitions de haut vol en compagnie de vos athlètes préférés. Transformez-vous en star internationale ou en pilote de Formule 1 le temps d'une journée. Laissez-vous guider par des chefs étoilés qui dévoileront leurs secrets culinaires lors d'ateliers intimes. Savourez des brunchs aux meilleures tables et émerveillez-vous devant des shows culinaires spectaculaires. Offrez-vous des instants uniques où le luxe et l'exclusivité se marient pour créer des souvenirs inoubliables.
@@ -73,135 +73,54 @@
             <div id="resultat" class="overflow_listEvent">   
                 <!-- MODULE 1 -->
                 <!-- MODULE pour la boucle -->
-                <div class="module_listEvent">
-    
-                    <!-- EMMET -->
-                    <!-- .img_listEvent>img^.txt_container_listEvent>.num_listEvent+.txt_listEvent^.tarif_etat_listEvent>.tarif_listEvent+.etat_listEvent -->
-                    
-                    <!-- MODULE - partie gauche - image -->
-                    <div class="img_listEvent"><img src="./img/event_bateau.jpg" alt=""></div>
-    
-                    <!-- MODULE - partie centrale - texte -->
-                    <div class="center_txt_listEvent grand_ecran_listEvent">
-                        <div class="txt_container_listEvent">
-                            <!-- numéro -->
-                            <div class="num_listEvent">01</div>
-                            <div class="txt_listEvent">
-                                <div class="titre_listEvent">Calamar gourmand</div>
-                                <!-- date / category -->
-                                <div class="ss_titre_listEvent">
-                                    <div class="category">Atelier</div>
-                                    <div class="date">29-05-2024</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- MODULE - partie droite - tarif & état -->
-                    <div class="tarif_etat_listEvent grand_ecran_listEvent">
-                        <div class="tarif_listEvent">Tarif: 75€</div>
-                        <div class="etat_listEvent">Complet</div>
-                    </div>
+                <div class="lb_event">
 
+                    <!-- image en backgound -->
+                    <div class="lb_imageEvent"></div>
 
-                    <!-- MODULE RESPONSIVE - PETIT ECRAN (partie centrale & droite) -->
-                    <div class="petit_ecran_listEvent">
-        
-                        <!-- MODULE - partie droite - tarif & état -->
-                        <div class="tarif_etat_listEvent">
-                            <div class="tarif_listEvent">Tarif: 75€</div>
-                            <div class="etat_listEvent">Complet</div>
+                    <!-- texte -->
+                    <div class="lb_eventContainer">
+                        <div class="lb_numeroEvent">01</div>
+                        <div class="lb_text">
+                        <div class="lb_titre">Coconut milk</div>
+                        <div class="lb_categoryDate">
+                            <div class="lb_category">Atelier</div>
+                            <div class="lb_date">29-05-2024</div>
                         </div>
-        
-                        <!-- MODULE - partie centrale - texte -->
-                        <div class="center_txt_listEvent">
-                            <div class="txt_container_listEvent">
-                                <!-- numéro -->
-                                <div class="num_listEvent">01</div>
-                                <div class="txt_listEvent">
-                                    <div class="titre_listEvent">Calamar gourmand</div>
-                                    <!-- date / category -->
-                                    <div class="ss_titre_listEvent">
-                                        <div class="category">Atelier</div>
-                                        <div class="date">29-05-2024</div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    
+                    <div class="lb_reservation">
+                        <a href="#modalInfoPerso" class="lb_billet">Télécharger le billet</a>
+                        <a href="" class="lb_consulter">Consulter</a>
+                    </div>
                 </div>
-    
+
                 <!-- MODULE 2 -->
                 <!-- MODULE pour la boucle -->
-                <div class="module_listEvent">
-    
-                    <!-- EMMET -->
-                    <!-- .img_listEvent>img^.txt_container_listEvent>.num_listEvent+.txt_listEvent^.tarif_etat_listEvent>.tarif_listEvent+.etat_listEvent -->
-                    
-                    <!-- MODULE - partie gauche - image -->
-                    <div class="img_listEvent"><img src="./img/event_tennis.jpg" alt=""></div>
-    
-                    <!-- MODULE - partie centrale - texte -->
-                    <div class="center_txt_listEvent">
-                        <div class="txt_container_listEvent">
-                            <!-- numéro -->
-                            <div class="num_listEvent">02</div>
-                            <div class="txt_listEvent">
-                                <div class="titre_listEvent">Tel un athlète</div>
-                                <!-- date / category -->
-                                <div class="ss_titre_listEvent">
-                                    <div class="category">Divertissement</div>
-                                    <div class="date">29-05-2024</div>
-                                </div>
-                            </div>
+                <div class="lb_event">
+
+                    <!-- image en backgound -->
+                    <div class="lb_imageEvent"></div>
+
+                    <!-- texte -->
+                    <div class="lb_eventContainer">
+                        <div class="lb_numeroEvent">01</div>
+                        <div class="lb_text">
+                        <div class="lb_titre">Coconut milk</div>
+                        <div class="lb_categoryDate">
+                            <div class="lb_category">Atelier</div>
+                            <div class="lb_date">29-05-2024</div>
+                        </div>
                         </div>
                     </div>
-    
-                    <!-- MODULE - partie droite - tarif & état -->
-                    <div class="tarif_etat_listEvent">
-                        <div class="tarif_listEvent">Tarif: 75€</div>
-                        <div class="etat_listEvent">Réservé</div>
+                    <div class="lb_reservation">
+                        <a href="#modalInfoPerso" class="lb_billet">Télécharger le billet</a>
+                        <a href="" class="lb_consulter">Consulter</a>
                     </div>
                 </div>
     
-                <!-- MODULE 3 -->
-                <!-- MODULE pour la boucle -->
-                <div class="module_listEvent">
-    
-                    <!-- EMMET -->
-                    <!-- .img_listEvent>img^.txt_container_listEvent>.num_listEvent+.txt_listEvent^.tarif_etat_listEvent>.tarif_listEvent+.etat_listEvent -->
-                    
-                    <!-- MODULE - partie gauche - image -->
-                    <div class="img_listEvent"><img src="./img/event_animal.jpg" alt=""></div>
-    
-                    <!-- MODULE - partie centrale - texte -->
-                    <div class="center_txt_listEvent">
-                        <div class="txt_container_listEvent">
-                            <!-- numéro -->
-                            <div class="num_listEvent">03</div>
-                            <div class="txt_listEvent">
-                                <div class="titre_listEvent">Salon de l'automobile</div>
-                                <!-- date / category -->
-                                <div class="ss_titre_listEvent">
-                                    <div class="category">Divertissement</div>
-                                    <div class="date">29-05-2024</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- MODULE - partie droite - tarif & état -->
-                    <div class="tarif_etat_listEvent">
-                        <div class="tarif_listEvent">Tarif: 75€</div>
-                        <div class="etat_listEvent">Réservé</div>
-                    </div>
-                </div>
-                <!-- <div class="degrade_listEvent"> -->
             </div>
 
-
-            </div>
         </div>
 
 
