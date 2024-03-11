@@ -15,8 +15,44 @@
 <body>
 
 
+<!-- ------------------------------- MODAL BILLET -------------------------------- -->
 
 
+    <!-- MODAL BILLET (structure générale)-->
+    <div id="modalBillet">
+        <div class="modalContentBillet">
+            <div class="modalBilletBg" style="background-image: url(./img/event_miami.jpg);"></div>
+        </div>
+        <a class="modalCloseBillet" href="#"><img class="img_croix_popup2" src="./img/croix_close.svg" alt=""></a>
+        <a href="" id="lb_btnBillet" class="btn_billet_panier">Télécharger le billet</a>
+
+        <!-- MODAL BILLET (modélisation)-->
+        <div class="billet">
+            <!-- <img src="./img/test_billet.png" alt=""> -->
+            <div class="billet_partie_haute">
+            <div class="imgEventBillet">
+                <div class="bgEventBillet" style="background-image: url(./img/event_miami.jpg);"></div>
+                <!-- <img src="./img/coco2.JPG" alt=""> -->
+            </div>
+            <div class="divDate">
+                <div class="dateBillet">24.01.24</div>
+            </div>
+            <h2 class="titreBillet">Salon de l'automobile</h2>
+            <p class="categorieBillet">divertissement</p>
+            <div class="placeBillet">
+                <div class="txtPlaceBillet"><p>Nombre de <br> places réservées</p></div>
+                <div class="nbPlaceBillet">01</div>
+            </div>
+            <div class="txtBillet">
+                Merci de vous présenter à l'événement 30 minutes avant le commencement et de vous munir de votre billet de réservation.
+            </div>
+            </div>
+            <div class="billet_partie_basse">
+            <img class="imgCodeBarre" src="./img/code_barre.png" alt="">
+            </div>
+
+        </div>
+    </div>
 
 
 <main class="siteListEvent">
@@ -92,7 +128,7 @@
                         </div>
                     </div>
                     <div class="lb_reservation">
-                        <a href="#modalInfoPerso" class="lb_billet">Télécharger le billet</a>
+                        <a href="#modalBillet" class="lb_billet">Télécharger le billet</a>
                         <a href="" class="lb_consulter">Consulter</a>
                     </div>
                 </div>

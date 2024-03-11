@@ -625,11 +625,9 @@ background-color: rgba(255, 255, 255, 0.5);
 /* -- MODAL BILLET - structure générale (list_book.php) -- */
 
 #modalBillet,
-#modalPanier
- {
+#modalPanier{
     position:fixed;
     z-index:10;
-    top:60px;
     left:0;
     right:0;
     bottom:0;
@@ -637,6 +635,14 @@ background-color: rgba(255, 255, 255, 0.5);
     display:flex;
     justify-content:end;
     align-items:center;
+}
+
+#modalPanier{
+    top:60px;
+}
+
+#modalBillet{
+    top:0;
 }
 
 .modalContentBillet {
@@ -649,7 +655,7 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 
 .modalBilletBg{
-    background-image: url(./img/coco2.JPG);
+    /* background-image: url(./img/coco2.JPG); */
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -763,9 +769,10 @@ background-color: rgba(255, 255, 255, 0.5);
     font-family: 'AmericanaRegular';
     font-size: 15px;
     transform: rotate(-90deg);
-    top: 43px;
-    right: -18px;
+    top: 42px;
+    right: -27px;
     position: absolute;
+    letter-spacing: 3px;
 }
 
 /* TITRE & SOUS-TITRE */
@@ -830,7 +837,7 @@ background-color: rgba(255, 255, 255, 0.5);
 
 
 .bgEventBillet{
-    background-image: url(./img/coco2.JPG);
+    /* background-image: url(./img/coco2.JPG); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
