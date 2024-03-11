@@ -24,10 +24,10 @@
     <!-- ------------------------------- HAUT -------------------------------- -->
     <!-- SECTION DU HAUT - IMAGE FIXE -->
     <section class="haut">
-        <div class="ImgHauteListEvent">
+        <div class="ImgHauteListBook">
         </div>
         <div class="titreListEvent">
-            <h1>Vos réservations</h1>
+            <h1>vos réservations</h1>
             <h2>sont disponibles</h2>
 
             <!-- <p>
@@ -45,7 +45,7 @@
         
         
         <!-- CONTAINER GLOBAL - liste des events -->
-        <div class="container_listEvent  menu_event">
+        <div class="container_listEvent  container_listBook menu_event">
 
             <!-- ZONE FILTRE -->
             <div class="container_btnFiltre_listEvent">
@@ -76,7 +76,9 @@
                 <div class="lb_event">
 
                     <!-- image en backgound -->
-                    <div class="lb_imageEvent"></div>
+                    <div class="lb_imageEvent">
+                        <img src="./img/event_miami.jpg" alt="">
+                    </div>
 
                     <!-- texte -->
                     <div class="lb_eventContainer">
@@ -100,13 +102,15 @@
                 <div class="lb_event">
 
                     <!-- image en backgound -->
-                    <div class="lb_imageEvent"></div>
+                    <div class="lb_imageEvent">
+                        <img src="./img/event_flamant.jpg" alt="">
+                    </div>
 
                     <!-- texte -->
                     <div class="lb_eventContainer">
-                        <div class="lb_numeroEvent">01</div>
+                        <div class="lb_numeroEvent">02</div>
                         <div class="lb_text">
-                        <div class="lb_titre">Coconut milk</div>
+                        <div class="lb_titre">Pink Flamingo</div>
                         <div class="lb_categoryDate">
                             <div class="lb_category">Atelier</div>
                             <div class="lb_date">29-05-2024</div>
@@ -167,7 +171,7 @@
 
                 // d) utiliser la méthode ajax de jquery pour l'affichage de la réponse
                 $.ajax({
-                    url: "traitement/traitement_ajax.php", // le fichier cible, celui qui fera le traitement (projet : mettre le chemin que l'on aurait mis dans la balise <a>)
+                    url: "traitement/traitement_ajax2.php", // le fichier cible, celui qui fera le traitement (projet : mettre le chemin que l'on aurait mis dans la balise <a>)
                     type: "POST", // la méthode utilisée (projet : ne rien mettre, par défaut on sera sur la method GET)
                     // les paramètres à fournir ex : ...id=4&nom=anonyme...(projet : on ne met rien) 
                     dataType: 'json', // le format des données attendues en tableau JSON pour être interprété et éxécuté par AJAX (projet : 'json') 

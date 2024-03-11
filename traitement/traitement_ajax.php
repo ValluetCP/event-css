@@ -13,9 +13,6 @@ $tab['contenu'] .=
     '<!-- MODULE 2 -->
     <!-- MODULE pour la boucle -->
     <div class="module_listEvent">
-
-        <!-- EMMET -->
-        <!-- .img_listEvent>img^.txt_container_listEvent>.num_listEvent+.txt_listEvent^.tarif_etat_listEvent>.tarif_listEvent+.etat_listEvent -->
         
         <!-- MODULE - partie gauche - image -->
         <div class="img_listEvent"><img src="' . $img_path . 'event_flamant.jpg" alt=""></div>
