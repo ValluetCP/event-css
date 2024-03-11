@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
-    <title>Liste des événements</title>
+    <title>CLIENT - Liste des événements</title>
     <meta name="description" content="Une phrase d’environ 170 caractères">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,16 +15,12 @@
 <body>
 
 
-
-
-
-
-<main class="siteListEvent">
+<main id="siteListEvent" class="siteList">
 
     <!-- ------------------------------- HAUT -------------------------------- -->
     <!-- SECTION DU HAUT - IMAGE FIXE -->
     <section class="haut">
-        <div class="ImgHauteListEvent">
+        <div id="ImgHauteListEvent" class="ImgHaute" style="background-image: url(./img/event_horizontal_cocktail.jpg);">
         </div>
         <div class="titreListEvent">
             <h1>tous nos événements</h1>
@@ -45,7 +41,7 @@
         
         
         <!-- CONTAINER GLOBAL - liste des events -->
-        <div class="container_listEvent  menu_event">
+        <div id="container_listEvent" class="container_list">
 
             <!-- ZONE FILTRE -->
             <div class="container_btnFiltre_listEvent">

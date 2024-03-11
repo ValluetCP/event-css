@@ -55,13 +55,15 @@
     </div>
 
 
-<main class="siteListEvent">
+<main id="siteListBook" class="siteList">
 
     <!-- ------------------------------- HAUT -------------------------------- -->
     <!-- SECTION DU HAUT - IMAGE FIXE -->
     <section class="haut">
-        <div class="ImgHauteListBook">
+
+        <div id="ImgHauteListBook" class="ImgHaute" style="background-image: url(./img/event_horizontal_yatch.jpg);">
         </div>
+
         <div class="titreListEvent">
             <h1>vos réservations</h1>
             <h2>sont disponibles</h2>
@@ -81,7 +83,7 @@
         
         
         <!-- CONTAINER GLOBAL - liste des events -->
-        <div class="container_listEvent  container_listBook menu_event">
+        <div id="container_listBook" class="container_list">
 
             <!-- ZONE FILTRE -->
             <div class="container_btnFiltre_listEvent">

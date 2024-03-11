@@ -2264,17 +2264,25 @@ padding-left: 624px;
 
 
 
-/* ------------ LISTE EVENT (test_list.html/list_event.php)- DEBUT ------------ */
+/* ------------ PAGE GABARIT (pour toutes les listes) - DEBUT ------------ */
 
-/* --- PARTIE HAUTE --- */
-/* Header de liste event */
-
-.siteListEvent {
+.siteList{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
         "haut"
         "bas";
+}
+
+/* --- PARTIE HAUTE --- */
+.ImgHaute{
+    grid-area: haut;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
 }
 
 .haut{
@@ -2283,29 +2291,27 @@ padding-left: 624px;
     position: fixed;
     width: 100%;
     height: 100%;
-    /* position: relative; */
 }
 
-.ImgHauteListEvent {
-    grid-area: haut;
-    background-image: url(./img/event_horizontal_cocktail.jpg);
-    background-size: cover;
-    background-position: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
-}
+/* --- PARTIE BASSE --- */
 
 .bas{
     grid-area: bas;
-    /* margin: auto; */
     margin-top: 100vh;
-    /* margin-top: 46%; */
     z-index: 0;
     height: 100%;
     background-color: white;
 }
+
+/* ------------ PAGE GABARIT (pour toutes les listes) - FIN ------------ */
+
+
+
+
+/* ------------ LISTE EVENT (test_list.html/list_event.php)- DEBUT ------------ */
+
+/* --- PARTIE HAUTE --- */
+/* Header de liste event */
 
 .titreListEvent {
     color: var(--vertClair);
@@ -2373,7 +2379,14 @@ padding-left: 624px;
 /* Affichage de la liste des events */
 
 /* CONTAINER LIST EVENT */
-.container_listEvent{
+/* .container_listEvent{
+    max-width: 1201px;
+    margin: auto;
+    padding: 0 20px;
+    margin-top: 80px;
+} */
+
+.container_list{
     max-width: 1201px;
     margin: auto;
     padding: 0 20px;
@@ -2527,17 +2540,7 @@ padding-left: 624px;
 
 
 
-/* ------------ PAGE INFO PERSO - DEBUT ------------ */
-.ImgHauteListBook{
-    grid-area: haut;
-    background-image: url(./img/event_horizontal_yatch.jpg);
-    background-size: cover;
-    background-position: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
-}
+
 
 
 /* ------------ PAGE INFO PERSO - FIN ------------ */
@@ -3509,7 +3512,7 @@ padding-left: 624px;
         max-width: 100%;
     }
 
-    .container_listBook {
+    #container_listBook {
         padding: 0 ;
     }
 
