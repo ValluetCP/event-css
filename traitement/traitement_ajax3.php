@@ -30,7 +30,7 @@ $tab['contenu'] .=
                         <img src="./img/event_agrume.jpg" alt="">
                     </div>
                 </td>
-                <td class="table_titre">Pink flamingo</td>
+                <td class="table_titre">mon beau citronnier</td>
                 <td class="table_category">Atelier</td>
                 <td>24.05.24</td>
                 <td>consulter</td>

@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
-    <title>Liste des utilisateurs</title>
+    <title>ADMIN - Liste des utilisateurs</title>
     <meta name="description" content="Une phrase d’environ 170 caractères">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -69,59 +69,54 @@
             </div>
 
             <!-- Div vide pour afficher le contenu -->
-            <div id="resultat" class="overflow_listEvent">   
-                <!-- MODULE 1 -->
-                <!-- MODULE pour la boucle -->
-                <div class="lb_event">
+            <div id="resultat" class="overflow_listEvent"> 
 
-                    <!-- image en backgound -->
-                    <div class="lb_imageEvent">
-                        <img src="./img/event_miami.jpg" alt="">
-                    </div>
-
-                    <!-- texte -->
-                    <div class="lb_eventContainer">
-                        <div class="lb_numeroEvent">01</div>
-                        <div class="lb_text">
-                        <div class="lb_titre">Coconut milk</div>
-                        <div class="lb_categoryDate">
-                            <div class="lb_category">Atelier</div>
-                            <div class="lb_date">29-05-2024</div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="lb_reservation">
-                        <a href="#modalBillet" class="lb_billet">Télécharger le billet</a>
-                        <a href="" class="lb_consulter">Consulter</a>
-                    </div>
-                </div>
-
-                <!-- MODULE 2 -->
-                <!-- MODULE pour la boucle -->
-                <div class="lb_event">
-
-                    <!-- image en backgound -->
-                    <div class="lb_imageEvent">
-                        <img src="./img/event_flamant.jpg" alt="">
-                    </div>
-
-                    <!-- texte -->
-                    <div class="lb_eventContainer">
-                        <div class="lb_numeroEvent">02</div>
-                        <div class="lb_text">
-                        <div class="lb_titre">Pink Flamingo</div>
-                        <div class="lb_categoryDate">
-                            <div class="lb_category">Atelier</div>
-                            <div class="lb_date">29-05-2024</div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="lb_reservation">
-                        <a href="#modalInfoPerso" class="lb_billet">Télécharger le billet</a>
-                        <a href="" class="lb_consulter">Consulter</a>
-                    </div>
-                </div>
+                <!-- TABLEAU - LISTE DES EVENTS -->
+                <table class="tableau_adminListEvent">
+                    <thead class="thead_adminListEvent">
+                        <tr>
+                            <th></th>
+                            <th>Titre</th>
+                            <th>Catégorie</th>
+                            <th>Date</th>
+                            <th colspan="4">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody_adminListEvent">
     
+                        <!-- MODULE 1 -->
+                        <tr class="table_module">
+                            <td>
+                                <div class="table_img">
+                                    <img src="./img/event_flamant.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="table_titre">Pink flamingo</td>
+                            <td class="table_category">Découverte</td>
+                            <td>24.05.24</td>
+                            <td>consulter</td>
+                            <td>annuler</td>
+                            <td>supprimer</td>
+                            <td><p class="table_btn">modifier</p></td>
+                        </tr>
+    
+                        <!-- MODULE 2 -->
+                        <tr>
+                            <td>
+                                <div class="table_img">
+                                    <img src="./img/event_tennis.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="table_titre">Salon de l'automobile</td>
+                            <td class="table_category">Divertissement</td>
+                            <td>24.05.24</td>
+                            <td>consulter</td>
+                            <td>annuler</td>
+                            <td>supprimer</td>
+                            <td><p class="table_btn">modifier</p></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         </div>
@@ -170,7 +165,7 @@
 
                 // d) utiliser la méthode ajax de jquery pour l'affichage de la réponse
                 $.ajax({
-                    url: "traitement/traitement_ajax2.php", // le fichier cible, celui qui fera le traitement (projet : mettre le chemin que l'on aurait mis dans la balise <a>)
+                    url: "traitement/traitement_ajax3.php", // le fichier cible, celui qui fera le traitement (projet : mettre le chemin que l'on aurait mis dans la balise <a>)
                     type: "POST", // la méthode utilisée (projet : ne rien mettre, par défaut on sera sur la method GET)
                     // les paramètres à fournir ex : ...id=4&nom=anonyme...(projet : on ne met rien) 
                     dataType: 'json', // le format des données attendues en tableau JSON pour être interprété et éxécuté par AJAX (projet : 'json') 

@@ -73,10 +73,10 @@
                 <table class="tableau_adminListEvent">
                     <thead class="thead_adminListEvent">
                         <tr>
-                            <th></th>
+                            <th class="table_img_none"></th>
                             <th>Titre</th>
-                            <th>Catégorie</th>
-                            <th>Date</th>
+                            <th class="table_category_none">Catégorie</th>
+                            <th class="table_date">Date</th>
                             <th colspan="4">Action</th>
                         </tr>
                     </thead>
@@ -84,34 +84,39 @@
     
                         <!-- MODULE 1 -->
                         <tr class="table_module">
-                            <td>
+                            <td class="table_img_none">
                                 <div class="table_img">
                                     <img src="./img/event_flamant.jpg" alt="">
                                 </div>
                             </td>
                             <td class="table_titre">Pink flamingo</td>
-                            <td class="table_category">Découverte</td>
-                            <td>24.05.24</td>
-                            <td>consulter</td>
-                            <td>annuler</td>
-                            <td>supprimer</td>
-                            <td><p class="table_btn">modifier</p></td>
+                            <td class="table_category table_category_none">Découverte</td>
+                            <td class="table_date">24.05.24</td>
+                            <td><a href="">consulter</a></td>
+                            <td><a href="">annuler</a></td>
+                            <td><a href="">supprimer</a></td>
+                            <!-- bouton -->
+                            <td>
+                                <p class="table_btn">
+                                    <a href="" id="table_btnTxt">modifier</a>
+                                </p>
+                            </td>
                         </tr>
     
                         <!-- MODULE 2 -->
                         <tr>
-                            <td>
+                            <td class="table_img_none">
                                 <div class="table_img">
                                     <img src="./img/event_tennis.jpg" alt="">
                                 </div>
                             </td>
                             <td class="table_titre">Salon de l'automobile</td>
-                            <td class="table_category">Divertissement</td>
-                            <td>24.05.24</td>
-                            <td>consulter</td>
-                            <td>annuler</td>
-                            <td>supprimer</td>
-                            <td><p class="table_btn">modifier</p></td>
+                            <td class="table_category table_category_none">Divertissement</td>
+                            <td class="table_date">24.05.24</td>
+                            <td><a href="">consulter</a></td>
+                            <td><a href="">annuler</a></td>
+                            <td><a href="">supprimer</a></td>
+                            <td><p class="table_btn"><a href="" id="table_btnTxt">modifier</a></p></td>
                         </tr>
                     </tbody>
                 </table>

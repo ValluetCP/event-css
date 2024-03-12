@@ -2572,6 +2572,15 @@ padding-left: 624px;
     padding: 10px 0 20px;
 }
 
+.tbody_adminListEvent tr td a{
+    text-decoration: none;
+    color: var(--vertMoyen);
+}
+
+.tbody_adminListEvent tr td a:hover{
+    color: var(--vertNavMenu);
+}
+
 .table_titre{
     font-family: 'AmericanaRegular';
     font-size: 21px;
@@ -2599,13 +2608,14 @@ padding-left: 624px;
 }
 
 .table_btn{
-    color: var(--vertClair);
     background-color: var(--vertFonce);
     text-align: center;
     padding: 8px 0;
 }
 
-
+#table_btnTxt{
+    color: var(--vertClair);
+}
 
 
 
@@ -2952,6 +2962,24 @@ padding-left: 624px;
         font-size: 83px;
         line-height: 106px;
     }
+
+    /* ------------ ADMIN LISTE EVENT - (max-width:1200px)------------ */
+
+    /* --- PARTIE HAUTE --- */
+    
+    /* --- PARTIE BASSE --- */
+    .tbody_adminListEvent tr td{
+        font-size: 18px;
+        padding: 10px 5px 20px;
+    }
+
+    .table_btn {
+        padding: 8px 5px;
+    }
+
+    .table_date {
+        display: none;
+    } 
     
 
 }
@@ -3224,6 +3252,23 @@ padding-left: 624px;
     .center_txt_listEvent {
         margin: 50px 0 60px;
     }
+
+    /* ------------ ADMIN LISTE EVENT - (max-width:900px)------------ */
+
+    /* --- PARTIE HAUTE --- */
+    
+    /* --- PARTIE BASSE --- */
+
+    .table_date,
+    .table_category_none {
+        display: none;
+    }
+
+    .tbody_adminListEvent tr td{
+        font-size: 16px;
+    }
+    
+    
 }
 
 /* ---------------------- (max-width: 900px) - FIN ---------------------- */
@@ -3444,6 +3489,38 @@ padding-left: 624px;
 
     .btnProchainHistorique {
         margin-bottom: 35px;
+    }
+
+    /* ------------ ADMIN LISTE EVENT - (max-width:700px)------------ */
+
+    /* --- PARTIE HAUTE --- */
+    
+    /* --- PARTIE BASSE --- */
+
+    /* .table_img_none {
+        display: none;
+    } */
+
+    .tbody_adminListEvent tr td {
+        display: flex;
+    }
+
+    .tbody_adminListEvent tr td {
+        font-size: 18px;
+    }
+
+    .tbody_adminListEvent tr .table_titre{
+        font-size: 30px;
+    }
+
+    .table_module .table_category,
+    .table_module .table_date{
+        display: block;
+        font-size: 20px;
+    }
+
+    .table_btn {
+        padding: 9px 16px;
     }
 
 }
