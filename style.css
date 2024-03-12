@@ -2536,6 +2536,11 @@ padding-left: 624px;
 
 /* --- PARTIE BASSE --- */
 
+/* btn -  */
+.btn_adminListEvent{
+    font-size: 21px;
+}
+
 /* TABLEAU - LISTE DES EVENTS */
 .tableau_adminListEvent{
     margin-top: 95px;
@@ -2568,7 +2573,7 @@ padding-left: 624px;
 } */
 
 .tbody_adminListEvent tr td{
-    font-size: 21px;
+    font-size: 18px;
     padding: 10px 0 20px;
 }
 
@@ -2584,6 +2589,7 @@ padding-left: 624px;
 .table_titre{
     font-family: 'AmericanaRegular';
     font-size: 21px;
+    text-transform: capitalize;
 }
 
 .table_category{
@@ -3497,9 +3503,13 @@ padding-left: 624px;
     
     /* --- PARTIE BASSE --- */
 
-    /* .table_img_none {
+    .tableau_adminListEvent {
+        margin-top: 0;
+    }
+
+    .thead_adminListEvent tr th{
         display: none;
-    } */
+    }
 
     .tbody_adminListEvent tr td {
         display: flex;
@@ -3513,8 +3523,8 @@ padding-left: 624px;
         font-size: 30px;
     }
 
-    .table_module .table_category,
-    .table_module .table_date{
+    .table_category,
+    .table_date{
         display: block;
         font-size: 20px;
     }

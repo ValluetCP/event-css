@@ -14,10 +14,10 @@ $tab['contenu'] .=
     <table class="tableau_adminListEvent">
         <thead class="thead_adminListEvent">
             <tr>
-                <th></th>
+                <th class="table_img_none"></th>
                 <th>Titre</th>
-                <th>Catégorie</th>
-                <th>Date</th>
+                <th class="table_category_none">Catégorie</th>
+                <th class="table_date">Date</th>
                 <th colspan="4">Action</th>
             </tr>
         </thead>
@@ -25,18 +25,23 @@ $tab['contenu'] .=
 
             <!-- MODULE 1 -->
             <tr class="table_module">
-                <td>
+                <td class="table_img_none">
                     <div class="table_img">
                         <img src="./img/event_agrume.jpg" alt="">
                     </div>
                 </td>
                 <td class="table_titre">mon beau citronnier</td>
-                <td class="table_category">Atelier</td>
-                <td>24.05.24</td>
-                <td>consulter</td>
-                <td>annuler</td>
-                <td>supprimer</td>
-                <td><p class="table_btn">modifier</p></td>
+                <td class="table_category table_category_none">atelier</td>
+                <td class="table_date">24.05.24</td>
+                <td><a href="">consulter</a></td>
+                <td><a href="">annuler</a></td>
+                <td><a href="">supprimer</a></td>
+                <!-- bouton -->
+                <td>
+                    <p class="table_btn">
+                        <a href="" id="table_btnTxt">modifier</a>
+                    </p>
+                </td>
             </tr>
 
         </tbody>

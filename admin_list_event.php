@@ -47,7 +47,7 @@
             <div class="container_btnFiltre_listEvent">
 
                 <!-- BOUTON (btn Prochainement - btn historique) -->
-                <div class="btnProchainHistorique">
+                <div id="btn_adminListEvent" class="btnProchainHistorique">
                     <a href="" id="reinitialiser_resultat" class="prochainement_listEvent">Prochainement</a>
                     <a href="" id="prochain_event" class="historique_listEvent">Historique</a>
                 </div>
@@ -91,7 +91,7 @@
                             </td>
                             <td class="table_titre">Pink flamingo</td>
                             <td class="table_category table_category_none">Découverte</td>
-                            <td class="table_date">24.05.24</td>
+                            <td class="table_date">29.05.24</td>
                             <td><a href="">consulter</a></td>
                             <td><a href="">annuler</a></td>
                             <td><a href="">supprimer</a></td>
@@ -110,7 +110,7 @@
                                     <img src="./img/event_tennis.jpg" alt="">
                                 </div>
                             </td>
-                            <td class="table_titre">Salon de l'automobile</td>
+                            <td class="table_titre">Comme un pro</td>
                             <td class="table_category table_category_none">Divertissement</td>
                             <td class="table_date">24.05.24</td>
                             <td><a href="">consulter</a></td>
