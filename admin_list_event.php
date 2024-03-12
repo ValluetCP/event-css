@@ -63,24 +63,60 @@
                       </select>
                     </div>
                 </div>
+                
+            </div>
+
+            <!-- Div vide pour afficher le contenu -->
+            <div id="resultat" class="overflow_listEvent"> 
 
                 <!-- TABLEAU - LISTE DES EVENTS -->
-                <table>
-                    <tr>
-                        <th>Titre</th>
-                        <th>catégorie</th>
-                        <th>date</th>
-                        <th>action</th>
-                    </tr>
-                    <tr>
-                        <tr>Salon de l'automobile</tr>
-                        <tr>Divertissement</tr>
-                        <tr>24.05.24</tr>
-                        <tr>action</tr>
-                    </tr>
+                <table class="tableau_adminListEvent">
+                    <thead class="thead_adminListEvent">
+                        <tr>
+                            <th></th>
+                            <th>Titre</th>
+                            <th>Catégorie</th>
+                            <th>Date</th>
+                            <th colspan="4">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody_adminListEvent">
+    
+                        <!-- MODULE 1 -->
+                        <tr class="table_module">
+                            <td>
+                                <div class="table_img">
+                                    <img src="./img/event_flamant.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="table_titre">Pink flamingo</td>
+                            <td class="table_category">Découverte</td>
+                            <td>24.05.24</td>
+                            <td>consulter</td>
+                            <td>annuler</td>
+                            <td>supprimer</td>
+                            <td><p class="table_btn">modifier</p></td>
+                        </tr>
+    
+                        <!-- MODULE 2 -->
+                        <tr>
+                            <td>
+                                <div class="table_img">
+                                    <img src="./img/event_tennis.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="table_titre">Salon de l'automobile</td>
+                            <td class="table_category">Divertissement</td>
+                            <td>24.05.24</td>
+                            <td>consulter</td>
+                            <td>annuler</td>
+                            <td>supprimer</td>
+                            <td><p class="table_btn">modifier</p></td>
+                        </tr>
+                    </tbody>
                 </table>
-
             </div>
+
         </div>
 
 
@@ -127,7 +163,7 @@
 
                 // d) utiliser la méthode ajax de jquery pour l'affichage de la réponse
                 $.ajax({
-                    url: "traitement/traitement_ajax.php", // le fichier cible, celui qui fera le traitement (projet : mettre le chemin que l'on aurait mis dans la balise <a>)
+                    url: "traitement/traitement_ajax3.php", // le fichier cible, celui qui fera le traitement (projet : mettre le chemin que l'on aurait mis dans la balise <a>)
                     type: "POST", // la méthode utilisée (projet : ne rien mettre, par défaut on sera sur la method GET)
                     // les paramètres à fournir ex : ...id=4&nom=anonyme...(projet : on ne met rien) 
                     dataType: 'json', // le format des données attendues en tableau JSON pour être interprété et éxécuté par AJAX (projet : 'json') 
