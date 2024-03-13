@@ -107,6 +107,69 @@
                             </td>
                         </tr>
     
+                        <!-- MODULE 2 -->
+                        <tr class="table_module">
+                            <td>
+                                <div class="table_img">
+                                    <img src="./img/user_ben.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="table_titre table_nom">afleck</td>
+                            <td class="table_category table_penom">ben</td>
+                            <td class="table_email">ben@mail.com</td>
+                            <td class="table_pseudo">ben1</td>
+                            <td class="table_action"><a href="">modifier</a></td>
+                            <td class="table_action"><a href="">supprimer</a></td>
+                            <!-- bouton -->
+                            <td>
+                                <p class="table_btn">
+                                    <a href="" id="table_btnTxt">Consulter</a>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <!-- MODULE 3 -->
+                        <tr class="table_module">
+                            <td>
+                                <div class="table_img">
+                                    <img src="./img/user_klara.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="table_titre table_nom">martins</td>
+                            <td class="table_category table_penom">klara</td>
+                            <td class="table_email">klara@mail.com</td>
+                            <td class="table_pseudo">klara1</td>
+                            <td class="table_action"><a href="">modifier</a></td>
+                            <td class="table_action"><a href="">supprimer</a></td>
+                            <!-- bouton -->
+                            <td>
+                                <p class="table_btn">
+                                    <a href="" id="table_btnTxt">Consulter</a>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <!-- MODULE 4 -->
+                        <tr class="table_module">
+                            <td>
+                                <div class="table_img">
+                                    <img src="./img/user_emma.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="table_titre table_nom">lopez</td>
+                            <td class="table_category table_penom">emma</td>
+                            <td class="table_email">emma@mail.com</td>
+                            <td class="table_pseudo">emma1</td>
+                            <td class="table_action"><a href="">modifier</a></td>
+                            <td class="table_action"><a href="">supprimer</a></td>
+                            <!-- bouton -->
+                            <td>
+                                <p class="table_btn">
+                                    <a href="" id="table_btnTxt">Consulter</a>
+                                </p>
+                            </td>
+                        </tr>
+    
         
                     </tbody>
                 </table>
@@ -163,7 +226,7 @@
 
                 // d) utiliser la méthode ajax de jquery pour l'affichage de la réponse
                 $.ajax({
-                    url: "traitement/traitement_ajax3.php", // le fichier cible, celui qui fera le traitement (projet : mettre le chemin que l'on aurait mis dans la balise <a>)
+                    url: "traitement/traitement_ajax4.php", // le fichier cible, celui qui fera le traitement (projet : mettre le chemin que l'on aurait mis dans la balise <a>)
                     type: "POST", // la méthode utilisée (projet : ne rien mettre, par défaut on sera sur la method GET)
                     // les paramètres à fournir ex : ...id=4&nom=anonyme...(projet : on ne met rien) 
                     dataType: 'json', // le format des données attendues en tableau JSON pour être interprété et éxécuté par AJAX (projet : 'json') 

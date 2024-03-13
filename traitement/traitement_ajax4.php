@@ -14,35 +14,39 @@ $tab['contenu'] .=
     <table class="tableau_adminListEvent">
         <thead class="thead_adminListEvent">
             <tr>
-                <th class="table_img_none"></th>
-                <th>Titre</th>
-                <th class="table_category_none">Catégorie</th>
-                <th class="table_date">Date</th>
-                <th colspan="4">Action</th>
+                <th></th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>email</th>
+                <th class="table_pseudo">pseudo</th>
+                <th colspan="3">Action</th>
             </tr>
         </thead>
-        <tbody id="tbody_adminListEvent" class="tbody_adminList">
+        <tbody id="tbody_adminListUser" class="tbody_adminList">
+
 
             <!-- MODULE 1 -->
             <tr class="table_module">
-                <td class="table_img_none">
+                <td>
                     <div class="table_img">
-                        <img src="./img/event_agrume.jpg" alt="">
+                        <img src="./img/user_emma.jpg" alt="">
                     </div>
                 </td>
-                <td class="table_titre">mon beau citronnier</td>
-                <td class="table_category table_category_none">Découverte</td>
-                <td class="table_date">29.05.24</td>
-                <td class="table_action"><a href="">consulter</a></td>
-                <td class="table_action"><a href="">annuler</a></td>
+                <td class="table_titre table_nom">lopez</td>
+                <td class="table_category table_penom">emma</td>
+                <td class="table_email">emma@mail.com</td>
+                <td class="table_pseudo">emma1</td>
+                <td class="table_action"><a href="">modifier</a></td>
                 <td class="table_action"><a href="">supprimer</a></td>
                 <!-- bouton -->
                 <td>
                     <p class="table_btn">
-                        <a href="" id="table_btnTxt">modifier</a>
+                        <a href="" id="table_btnTxt">Consulter</a>
                     </p>
                 </td>
             </tr>
+
+
         </tbody>
     </table>';
 

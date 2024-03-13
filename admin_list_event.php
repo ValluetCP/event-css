@@ -63,6 +63,8 @@
                         <option value="1">Toutes les catégories</option>
                         <option value="2">Divertissement</option>
                         <option value="3">Atelier</option>
+                        <option value="4">Gastronomie</option>
+                        <option value="5">Evasion</option>
                       </select>
                     </div>
                 </div>
