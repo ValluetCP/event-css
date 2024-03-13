@@ -2526,13 +2526,38 @@ padding-left: 624px;
     bottom: 0;
 } */
 
-
 /* ------------ LISTE EVENT - FIN ------------ */
+
+
 
 /* ------------ ADMIN LISTE EVENT (admin_list_event.php/)- DEBUT ------------ */
 
 /* --- PARTIE HAUTE --- */
+/* BTN - AJOUTER UN EVENEMENT */
 
+.btn_ajouter{
+    text-decoration: none;
+    z-index: 10;
+    background-color: var(--vertFonce);
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    border-radius: 5px;
+}
+
+.btn_ajouter p{
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    color: var(--vertClair);
+    text-transform: uppercase;
+}
+
+.fa-plus{
+    color: var(--vertClair);
+    font-size: 20px;
+    padding-right: 10px;
+}
 
 /* --- PARTIE BASSE --- */
 

@@ -10,29 +10,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-
-<main id="siteListEvent" class="siteList">
-
-    <!-- ------------------------------- HAUT -------------------------------- -->
-    <!-- SECTION DU HAUT - IMAGE FIXE -->
-    <section class="haut">
-        <div id="ImgHauteListEvent" class="ImgHaute" style="background-image: url(./img/event_horizontal_bateau.jpg);">
-        </div>
-        <div class="titreListEvent">
-            <h1>liste des événements</h1>
-            <h2>ajouter, modifier, désactiver, supprimer</h2>
-
-            <!-- <p>
-                Plongez dans un monde d'expériences exclusives et inoubliables où chaque moment est une découverte. Assistez à des concerts privés, privatisez des lieux insolites et d'exception, et vivez des compétitions de haut vol en compagnie de vos athlètes préférés. Transformez-vous en star internationale ou en pilote de Formule 1 le temps d'une journée. Laissez-vous guider par des chefs étoilés qui dévoileront leurs secrets culinaires lors d'ateliers intimes. Savourez des brunchs aux meilleures tables et émerveillez-vous devant des shows culinaires spectaculaires. Offrez-vous des instants uniques où le luxe et l'exclusivité se marient pour créer des souvenirs inoubliables.
-            </p> -->
-
-            <!-- catégorie : divertissement, atelier, gastronomie, représentation, loisir -->
-        </div>
-    </section>
+    
+    <main id="siteListEvent" class="siteList">
+        
+        
+        <!-- ------------------------------- HAUT -------------------------------- -->
+        <!-- SECTION DU HAUT - IMAGE FIXE -->
+        <section class="haut">
+            <div id="ImgHauteListEvent" class="ImgHaute" style="background-image: url(./img/event_horizontal_bateau.jpg);">
+            </div>
+            <div class="titreListEvent">
+                <h1>liste des événements</h1>
+                <h2>ajouter, modifier, désactiver, supprimer</h2>
+                
+                <!-- <p>
+                    Plongez dans un monde d'expériences exclusives et inoubliables où chaque moment est une découverte. Assistez à des concerts privés, privatisez des lieux insolites et d'exception, et vivez des compétitions de haut vol en compagnie de vos athlètes préférés. Transformez-vous en star internationale ou en pilote de Formule 1 le temps d'une journée. Laissez-vous guider par des chefs étoilés qui dévoileront leurs secrets culinaires lors d'ateliers intimes. Savourez des brunchs aux meilleures tables et émerveillez-vous devant des shows culinaires spectaculaires. Offrez-vous des instants uniques où le luxe et l'exclusivité se marient pour créer des souvenirs inoubliables.
+                </p> -->
+                
+                <!-- catégorie : divertissement, atelier, gastronomie, représentation, loisir -->
+            </div>
+            
+        </section>
 
 
     <!-- ------------------------------- BAS -------------------------------- -->
@@ -124,7 +127,11 @@
 
         </div>
 
-
+        <!-- --------- BTN - AJOUTER UN EVENEMENT ---------- -->
+        <div class="container_btnAjouter">
+            
+            <a href="" class="btn_ajouter"><p><i class="fa-light fa-plus"></i>Ajouter un événement</p></a>
+        </div>
 
     </section>
 </main>
