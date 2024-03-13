@@ -2687,6 +2687,51 @@ padding-left: 624px;
 /* ------------ ADMIN LISTE USER (test_list_user.php/)- FIN ------------ */
 
 
+/* ------------ ADMIN PROFIL USER (profil_user.php/)- DEBUT ------------ */
+
+/* .siteProfil{
+    display: grid;
+    grid-template-columns: auto 45%;
+    grid-template-areas: 
+    "gaucheProfil droitProfil";
+    padding-top: 0px;
+    padding-bottom: 50px;
+} */
+
+.siteProfil{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* --- GAUCHE --- */
+.gaucheProfil {
+    grid-area: gaucheProfil;
+}
+
+/* --- DROITE --- */
+.droitProfil{
+    grid-area: droitProfil;
+    background-color: var(--vertFonce);
+    position: fixed;
+    width: 45%;
+    height: 100%;
+}
+
+.droitImg{
+    grid-area: droitProfil;
+    background-image: url(./img/user_lea.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 45%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+
+/* ------------ ADMIN PROFIL USER (profil_user.php/)- FIN ------------ */
+
+
 
 
 /* ------- LISTE BOOK (test_list_reservation.php/list_book.php)- DEBUT ------- */
