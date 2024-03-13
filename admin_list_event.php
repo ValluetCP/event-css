@@ -83,7 +83,7 @@
                             <th colspan="4">Action</th>
                         </tr>
                     </thead>
-                    <tbody class="tbody_adminListEvent">
+                    <tbody id="tbody_adminListEvent" class="tbody_adminList">
     
                         <!-- MODULE 1 -->
                         <tr class="table_module">
@@ -95,9 +95,9 @@
                             <td class="table_titre">Pink flamingo</td>
                             <td class="table_category table_category_none">Découverte</td>
                             <td class="table_date">29.05.24</td>
-                            <td><a href="">consulter</a></td>
-                            <td><a href="">annuler</a></td>
-                            <td><a href="">supprimer</a></td>
+                            <td class="table_action"><a href="">consulter</a></td>
+                            <td class="table_action"><a href="">annuler</a></td>
+                            <td class="table_action"><a href="">supprimer</a></td>
                             <!-- bouton -->
                             <td>
                                 <p class="table_btn">
@@ -115,11 +115,16 @@
                             </td>
                             <td class="table_titre">Comme un pro</td>
                             <td class="table_category table_category_none">Divertissement</td>
-                            <td class="table_date">24.05.24</td>
-                            <td><a href="">consulter</a></td>
-                            <td><a href="">annuler</a></td>
-                            <td><a href="">supprimer</a></td>
-                            <td><p class="table_btn"><a href="" id="table_btnTxt">modifier</a></p></td>
+                            <td class="table_date">29.05.24</td>
+                            <td class="table_action"><a href="">consulter</a></td>
+                            <td class="table_action"><a href="">annuler</a></td>
+                            <td class="table_action"><a href="">supprimer</a></td>
+                            <!-- bouton -->
+                            <td>
+                                <p class="table_btn">
+                                    <a href="" id="table_btnTxt">modifier</a>
+                                </p>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

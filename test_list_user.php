@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -76,51 +77,48 @@
                     <thead class="thead_adminListEvent">
                         <tr>
                             <th></th>
-                            <th>Titre</th>
-                            <th>Catégorie</th>
-                            <th>Date</th>
-                            <th colspan="4">Action</th>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>email</th>
+                            <th class="table_pseudo">pseudo</th>
+                            <th colspan="3">Action</th>
                         </tr>
                     </thead>
-                    <tbody class="tbody_adminListEvent">
+                    <tbody id="tbody_adminListUser" class="tbody_adminList">
     
                         <!-- MODULE 1 -->
                         <tr class="table_module">
                             <td>
                                 <div class="table_img">
-                                    <img src="./img/event_flamant.jpg" alt="">
+                                    <img src="./img/user_lea.jpg" alt="">
                                 </div>
                             </td>
-                            <td class="table_titre">Pink flamingo</td>
-                            <td class="table_category">Découverte</td>
-                            <td>24.05.24</td>
-                            <td>consulter</td>
-                            <td>annuler</td>
-                            <td>supprimer</td>
-                            <td><p class="table_btn">modifier</p></td>
+                            <td class="table_titre table_nom">davidson</td>
+                            <td class="table_category table_penom">léa</td>
+                            <td class="table_email">lea@mail.com</td>
+                            <td class="table_pseudo">lea1</td>
+                            <td class="table_action"><a href="">modifier</a></td>
+                            <td class="table_action"><a href="">supprimer</a></td>
+                            <!-- bouton -->
+                            <td>
+                                <p class="table_btn">
+                                    <a href="" id="table_btnTxt">Consulter</a>
+                                </p>
+                            </td>
                         </tr>
     
-                        <!-- MODULE 2 -->
-                        <tr>
-                            <td>
-                                <div class="table_img">
-                                    <img src="./img/event_tennis.jpg" alt="">
-                                </div>
-                            </td>
-                            <td class="table_titre">Salon de l'automobile</td>
-                            <td class="table_category">Divertissement</td>
-                            <td>24.05.24</td>
-                            <td>consulter</td>
-                            <td>annuler</td>
-                            <td>supprimer</td>
-                            <td><p class="table_btn">modifier</p></td>
-                        </tr>
+        
                     </tbody>
                 </table>
             </div>
 
         </div>
 
+        <!-- --------- BTN - AJOUTER UN EVENEMENT ---------- -->
+        <div class="container_btnAjouter">
+            
+            <a href="" class="btn_ajouter"><p><i class="fa-light fa-plus"></i>Ajouter un utilisateur</p></a>
+        </div>
 
 
     </section>

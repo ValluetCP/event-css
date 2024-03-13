@@ -2576,7 +2576,7 @@ padding-left: 624px;
 }
 
 .thead_adminListEvent tr th,
-.tbody_adminListEvent tr td{
+.tbody_adminList tr td{
     text-align: left;
 }
 
@@ -2593,21 +2593,21 @@ padding-left: 624px;
 
 /* tbody */
 
-/* .tbody_adminListEvent{
+/* .tbody_adminList{
     width: 100%;
 } */
 
-.tbody_adminListEvent tr td{
+.tbody_adminList tr td{
     font-size: 18px;
     padding: 10px 0 20px;
 }
 
-.tbody_adminListEvent tr td a{
+.tbody_adminList tr td a{
     text-decoration: none;
     color: var(--vertMoyen);
 }
 
-.tbody_adminListEvent tr td a:hover{
+.tbody_adminList tr td a:hover{
     color: var(--vertNavMenu);
 }
 
@@ -2648,9 +2648,43 @@ padding-left: 624px;
     color: var(--vertClair);
 }
 
-
-
 /* ------------ ADMIN LISTE EVENT (admin_list_event.php/)- FIN ------------ */
+
+
+
+/* ------------ ADMIN LISTE USER (test_list_user.php/)- DEBUT ------------ */
+
+/* --- PARTIE HAUTE --- */
+/* --- PARTIE BASSE --- */
+/* TABLEAU - LISTE DES USERS */
+.table_nom{
+    font-family: 'AmericanaRegular';
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.table_penom{
+    font-family: 'AmericanaRegular';
+    text-transform: capitalize;
+}
+
+.table_email{
+    text-transform: lowercase;
+}
+
+.tbody_adminList .table_action a{
+    color: var(--vertNavMenu);
+    text-decoration : underline;
+}
+
+/* .table_action::before{
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 1;
+} */
+
+/* ------------ ADMIN LISTE USER (test_list_user.php/)- FIN ------------ */
 
 
 
@@ -2999,7 +3033,7 @@ padding-left: 624px;
     /* --- PARTIE HAUTE --- */
     
     /* --- PARTIE BASSE --- */
-    .tbody_adminListEvent tr td{
+    .tbody_adminList tr td{
         font-size: 18px;
         padding: 10px 5px 20px;
     }
@@ -3010,7 +3044,17 @@ padding-left: 624px;
 
     .table_date {
         display: none;
-    } 
+    }
+
+    /* ------------ ADMIN LISTE USER - (max-width:1200px)------------ */
+
+    /* --- PARTIE HAUTE --- */
+    
+    /* --- PARTIE BASSE --- */
+
+    .table_pseudo {
+        display: none;
+    }
     
 
 }
@@ -3295,7 +3339,7 @@ padding-left: 624px;
         display: none;
     }
 
-    .tbody_adminListEvent tr td{
+    .tbody_adminList tr td{
         font-size: 16px;
     }
     
@@ -3536,15 +3580,15 @@ padding-left: 624px;
         display: none;
     }
 
-    .tbody_adminListEvent tr td {
+    .tbody_adminList tr td {
         display: flex;
     }
 
-    .tbody_adminListEvent tr td {
+    .tbody_adminList tr td {
         font-size: 18px;
     }
 
-    .tbody_adminListEvent tr .table_titre{
+    .tbody_adminList tr .table_titre{
         font-size: 30px;
     }
 
