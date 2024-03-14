@@ -2737,6 +2737,13 @@ padding-left: 624px;
 /* ------------ ADMIN PROFIL USER (profil_user.php/)- FIN ------------ */
 
 
+/* ------------ ADMIN CAREGORY (admin_list_category.php/) - DEBUT ------------ */
+#container_adminCategory{
+    margin-top: 0px;
+}
+/* ------------ ADMIN CAREGORY (admin_list_category.php/) - FIN ------------ */
+
+
 
 
 /* ------- LISTE BOOK (test_list_reservation.php/list_book.php)- DEBUT ------- */
