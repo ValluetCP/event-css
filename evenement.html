@@ -13,6 +13,34 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+    <!-- MODAL PANIER (structure générale)-->
+    <div id="modalPanier">
+        <div class="modalContentPanier">
+            <div class="modalPanierContainer">
+                <p class="modalPanierAjout">Produit ajouté au panier</p>
+                <!-- DEBUT ITEM -->
+                <div class="modalPanierContainerItems">
+                    <div class="modalPanierimg" style="background-image: url(./img/event_bocal.jpg);">
+                        <!-- image en bg -->
+                    </div>
+                    <div class="modalPaniertxt">
+                        <h1 class="modalPaniertitre">Salon de l'automobile</h1>
+                        <h2 class="modalPanierCategorie">Atelier</h2>
+                        <p class="modalPanierQuantite">Quantité :<span> 1</span></p>
+                    </div>
+                </div>
+                <!-- FIN ITEM -->
+            </div>
+        </div>
+        <a class="modalClosePanier" href="#"><img class="img_croix_popup2" src="./img/coix_verte.svg" alt=""></a>
+        <div class="modalPanierDegrade">
+            <a href="" id="lb_btnPanier" class="btn_billet_panier">Voir panier</a>
+        </div>
+    </div>
+
+
+
     <!-- MODAL EVENT (Confirmation "Ajouter une réservation")-->
     <div id="modalEvent">
         <div class="modal_content">
@@ -25,7 +53,7 @@
                 Consulter <a href=""> l'historique</a></p>
             </div>
             <div class="btnEventGroup">
-                <a href="" id="e_btnEventReservation"class="modal_btn btn_modal_1_trait">Ajouter une autre réservation</a>
+                <a href="#modalPanier" id="e_btnEventReservation"class="modal_btn btn_modal_1_trait">Ajouter une autre réservation</a>
                 <a href="" id="e_btnEventQuitter"class="modal_btn btn_modal_2_fond">Fermer</a>
             </div>
         </div>

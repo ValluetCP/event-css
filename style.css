@@ -631,14 +631,18 @@ background-color: rgba(255, 255, 255, 0.5);
     left:0;
     right:0;
     bottom:0;
-    background: rgba(255, 255, 255, 0.5);
     display:flex;
     justify-content:end;
     align-items:center;
 }
 
+#modalBillet{
+    background: rgba(255, 255, 255, 0.5);
+}
+
 #modalPanier{
     top:60px;
+    background: transparent;
 }
 
 #modalBillet{
@@ -889,6 +893,7 @@ background-color: rgba(255, 255, 255, 0.5);
     height: 100%;
     border-left: 1px solid var(--vertFonce);
     padding-top: 112px;
+    margin-top: 30px;
 }
 
 .modalPanierContainer{
@@ -944,7 +949,7 @@ background-color: rgba(255, 255, 255, 0.5);
 
 /* -- IMAGE EN BACKGROUND (panier.php) -- */
 .modalPanierimg{
-    background-image: url(./img/coco2.JPG);
+    /* background-image: url(./img/coco2.JPG); */
     background-repeat: no-repeat;
     width: 168px;
     height: 214px;
