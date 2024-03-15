@@ -22,7 +22,7 @@
         <!-- ------------------------------- HAUT -------------------------------- -->
         <!-- SECTION DU HAUT - IMAGE FIXE -->
         <section class="haut">
-            <div id="ImgHauteListEvent" class="ImgHaute" style="background-image: url(./img/crabe_header2.JPG);">
+            <div id="ImgHauteListEvent" class="ImgHaute" style="background-image: url(./img/event_horizontal_thai.JPG);">
             </div>
             <div class="titreListEvent">
                 <h1>liste des catégories</h1>

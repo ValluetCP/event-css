@@ -1069,7 +1069,7 @@ background-color: rgba(255, 255, 255, 0.5);
 
 .gaucheImg{
     grid-area: gauche;
-    background-image: url(./img/event_bocal.jpg);
+    /* background-image: url(./img/event_bocal.jpg); */
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -2724,7 +2724,7 @@ padding-left: 624px;
 
 .droitImg{
     grid-area: droitProfil;
-    background-image: url(./img/user_lea.jpg);
+    background-image: url(./img/event_miami.jpg);
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -2741,7 +2741,55 @@ padding-left: 624px;
 #container_adminCategory{
     margin-top: 0px;
 }
-/* ------------ ADMIN CAREGORY (admin_list_category.php/) - FIN ------------ */
+/* ------------ ADMIN LISTE CAREGORY (admin_list_category.php/) - FIN ------------ */
+
+
+/* ------------ ADMIN AJOUTER CAREGORY (category.php/) - DEBUT ------------ */
+
+#containerCategory {
+    width: 730px;
+    margin-top: 195px;
+}
+
+#containerCategory h1{
+    line-height: 80px;
+}
+
+#categorieForm{
+    margin-top: 75px;
+}
+
+.categorie_form{
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    color: var(--vertFonce);
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.categorie_form label {
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+.categorie_form input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid var(--vertFonce);
+    margin-bottom: 28px;
+}
+
+.categorie_form input::placeholder{
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    color: var(--vertFonce);
+    font-size: 21px;
+}
+/* ------------ ADMIN AJOUTER CAREGORY (category.php/) - FIN ------------ */
 
 
 
