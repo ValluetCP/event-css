@@ -102,10 +102,13 @@
         <!-- ESPACE DE NAVIGATION - fin -->
     </nav>
 
+
+
+    <!-- -------------------------- PAGE FORMULAIRE EVENT -------------------------- -->
     <main class="site siteEvent">
         <!-- SECTION GAUCHE - IMAGE FIXE -->
         <section class="gauche gaucheEvent">
-            <div class="gaucheImg gaucheImgEvent" style="background-image: url(./img/event_horizontal_cocktail.jpg);"></div>
+            <div class="gaucheImg gaucheImgEvent" style="background-image: url(./img/event_horizontal_bateau.jpg);"></div>
         </section>
 
         <!-- SECTION DROITE - FICHE PRODUIT -->

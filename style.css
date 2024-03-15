@@ -2713,6 +2713,10 @@ padding-left: 624px;
     grid-area: gaucheProfil;
 }
 
+.gaucheProfil .containerGauche{
+    background-color: var(--vertFonce);
+}
+
 /* --- DROITE --- */
 .droitProfil{
     grid-area: droitProfil;
