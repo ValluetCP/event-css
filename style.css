@@ -2755,34 +2755,34 @@ padding-left: 624px;
     line-height: 80px;
 }
 
-#categorieForm{
+.gabarit_form{
     margin-top: 75px;
 }
 
-.categorie_form{
+.gabarit_form{
     text-transform: uppercase;
     font-family: 'Karla', sans-serif;
     font-weight: 200;
     color: var(--vertFonce);
     font-size: 21px;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 30px;
 }
 
-.categorie_form label {
+.gabarit_form label {
     margin-bottom: 35px;
     display: inline-block;
 }
 
-.categorie_form input{
-    width: 80%;
+.gabarit_form input{
+    width: 100%;
     height: 50px;
     border: none;
     border-bottom: 1px solid var(--vertFonce);
     margin-bottom: 28px;
 }
 
-.categorie_form input::placeholder{
+.gabarit_form input::placeholder{
     text-transform: uppercase;
     font-family: 'Karla', sans-serif;
     font-weight: 200;
@@ -2790,6 +2790,49 @@ padding-left: 624px;
     font-size: 21px;
 }
 /* ------------ ADMIN AJOUTER CAREGORY (category.php/) - FIN ------------ */
+#eventForm div{
+    margin-top: 0px;
+}
+
+#containerEventForm {
+    width: 730px;
+    margin-top: 125px;
+}
+
+#containerEventForm h1{
+    line-height: 80px;
+    margin-bottom: 75px;
+}
+
+.gabarit_form input[type="file"]{
+    border: none;
+}
+
+.gabarit_form label{
+    margin-right: 30px;
+}
+
+input[type=file]::file-selector-button {
+    font-family: 'Karla', sans-serif;
+    margin-right: 8px;
+    border: none;
+    background: var(--vertFonce);
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.event_file{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.event_file label {
+    margin-bottom: 0px;
+}
+/* ------------ ADMIN AJOUTER EVENT (evenement.php/) - DEBUT ------------ */
+
+/* ------------ ADMIN AJOUTER EVENT (evenement.php/) - FIN ------------ */
 
 
 
