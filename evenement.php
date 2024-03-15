@@ -105,21 +105,17 @@
     <main class="site siteEvent">
         <!-- SECTION GAUCHE - IMAGE FIXE -->
         <section class="gauche gaucheEvent">
-            <div class="gaucheImg gaucheImgEvent" style="background-image: url(./img/event_mer_vue_aerienne.jpg);"></div>
+            <div class="gaucheImg gaucheImgEvent" style="background-image: url(./img/event_horizontal_cocktail.jpg);"></div>
         </section>
 
         <!-- SECTION DROITE - FICHE PRODUIT -->
         <section class="droite">
-            <div id="containerEventForm" class="containerDroit containerDroitEvent">
+            <div id="containerEventForm" class="containerGabaritForm containerDroit containerDroitEvent">
 
-                <h1>Créer<br>un événement</h1>
+                <h1>Ajouter<br>un événement</h1>
 
                 <!-- FORMULAIRE - AJOUTER UN EVENT -->
                 <form id="eventForm" class="gabaritForm" action="" method="post">
-                    <div class="gabarit_form">
-                        <!-- <label for="">nom de la nouvelle catégorie</label><br> -->
-                        <input type="text" placeholder="nom de la nouvelle catégorie">
-                    </div>
                     
                     <div class="gabarit_form">
                         <input type="text" name="titre" placeholder="titre">

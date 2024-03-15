@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ajouter une Catégorie</title>
+    <title>Ajouter un utilisateur</title>
     <meta name="description" content="Une phrase d’environ 170 caractères">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
 
     <nav class="navbar">
 
@@ -106,72 +105,50 @@
     <main class="site siteEvent">
         <!-- SECTION GAUCHE - IMAGE FIXE -->
         <section class="gauche gaucheEvent">
-            <div class="gaucheImg gaucheImgEvent" style="background-image: url(./img/event_horizontal_thai.jpg);"></div>
+            <div class="gaucheImg gaucheImgEvent" style="background-image: url(./img/event_horizontal_voiture.jpg);"></div>
         </section>
 
         <!-- SECTION DROITE - FICHE PRODUIT -->
         <section class="droite">
-            <div id="containerCategory" class="containerGabaritForm containerDroit containerDroitEvent">
+            <div id="containerUserForm" class="containerGabaritForm containerDroit containerDroitEvent">
 
-                <h1>Ajouter<br>une catégorie</h1>
+                <h1>Ajouter<br>un utilisateur</h1>
 
-                <!-- FORMULAIRE - AJOUTER UNE CATEGORIE -->
-                <form id="categorieForm" class="gabaritForm" action="" method="post">
-                    <div id="categorie_form" class="categorie_form gabarit_form">
-                        <!-- <label for="">nom de la nouvelle catégorie</label><br> -->
-                        <input type="text" placeholder="nom de la nouvelle catégorie">
+                <!-- FORMULAIRE - AJOUTER UN USER -->
+                <form id="userForm" class="gabaritForm" action="" method="post">
+                    
+                    <div class="gabarit_form">
+                        <input type="text"  placeholder="nom" name="nom" >
+                    </div>
+                    
+                    <div class="gabarit_form">
+                        <input type="text"  placeholder="prenom" name="prenom" >
+                    </div>
+                    
+                    <div class="gabarit_form">
+                        <input type="text"  placeholder="pseudo" name="pseudo" >
+                    </div>
+                    
+                    <div class="gabarit_form">
+                        <input type="email"  placeholder="email" name="email" >
+                    </div>
+                    
+                    <div class="gabarit_form">
+                        <input type="password"  placeholder="mot de passe" name="mdp" >
+                    </div>
+
+                    <div class="gabarit_form">
+                        <label id="img_profil">Télécharger une photo de profil :</label>
+                        <input type="file" class="form-control" name="img_profil" class="file">
                     </div>
 
                     <!-- BOUTON DE VALIDATION RESERVATION -->
                     <div class="btn_flex">
                         <!-- <button type="button" class="reserve  btnEvent btnEvent-3">Réserver</button> -->
-                        <button onclick="window.location.href='#modalEvent'" type="button" class="btnEvent btnEvent-3">Ajouter</button>
+                        <button onclick="window.location.href='#modalEvent'" type="button" class="btnEvent btnEvent-3">Ajouter un événement</button>
                     </div>
                 </form>
 
-                <h3>Les événements associés</h3>
-                <div class="trioCategory">
-                    <article class="categoryUn">
-                        <figure class="fig_1">
-                            <a href="">
-                                <div class="imgCategory"><img src="./img/event_poisson.jpg" alt=""></div>
-                            </a>
-                        </figure>
-                        <div class="titreCategory">
-                            Asseyez-vous à la grande table
-                        </div>
-                        <div class="sousTitreCategory">
-                            DIVERTISSEMENT
-                        </div>
-                    </article>
-                    <article class="categoryDeux">
-                        <figure class="fig_1">
-                            <a href="">
-                                <div class="imgCategory"><img src="./img/event_bocal.jpg" alt=""></div>
-                            </a>
-                        </figure>
-                        <div class="titreCategory">
-                            Calamar gourmand
-                        </div>
-                        <div class="sousTitreCategory">
-                            DIVERTISSEMENT
-                        </div>
-                    </article>
-                    <article class="categoryTrois">
-                        <figure class="fig_1">
-                            <a href="">
-                                <div class="imgCategory"><img src="./img/event_salon_automobile.jpg" alt=""></div>
-                            </a>
-                        </figure>
-                        <div class="titreCategory">
-                            Salon de l'automobile
-                        </div>
-                        <div class="sousTitreCategory">
-                            DIVERTISSEMENT
-                        </div>
-                    </article>
-
-                </div>
             </div>
 
         </section>

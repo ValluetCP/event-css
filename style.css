@@ -2737,21 +2737,21 @@ padding-left: 624px;
 /* ------------ ADMIN PROFIL USER (profil_user.php/)- FIN ------------ */
 
 
-/* ------------ ADMIN CAREGORY (admin_list_category.php/) - DEBUT ------------ */
+/* ------------ ADMIN LISTE CAREGORY (admin_list_category.php/) - DEBUT ------------ */
 #container_adminCategory{
     margin-top: 0px;
 }
 /* ------------ ADMIN LISTE CAREGORY (admin_list_category.php/) - FIN ------------ */
 
 
-/* ------------ ADMIN AJOUTER CAREGORY (category.php/) - DEBUT ------------ */
 
-#containerCategory {
-    width: 730px;
+/* --------- ADMIN GABARIT FORMULAIRE (category, event, user) - DEBUT --------- */
+
+.containerGabaritForm {
     margin-top: 195px;
 }
 
-#containerCategory h1{
+.containerGabaritForm h1{
     line-height: 80px;
 }
 
@@ -2789,18 +2789,8 @@ padding-left: 624px;
     color: var(--vertFonce);
     font-size: 21px;
 }
-/* ------------ ADMIN AJOUTER CAREGORY (category.php/) - FIN ------------ */
-#eventForm div{
-    margin-top: 0px;
-}
 
-#containerEventForm {
-    width: 730px;
-    margin-top: 125px;
-}
-
-#containerEventForm h1{
-    line-height: 80px;
+.containerGabaritForm h1{
     margin-bottom: 75px;
 }
 
@@ -2822,6 +2812,49 @@ input[type=file]::file-selector-button {
     cursor: pointer;
 }
 
+/* --------- ADMIN GABARIT FORMULAIRE (category, event, user) - FIN --------- */
+
+
+/* ------------ ADMIN AJOUTER CATEGORY (category.php/) - DEBUT ------------ */
+
+/* #containerCategory {
+    margin-top: 275px;
+} */
+
+#containerCategory h1{
+    margin-bottom: 110px;
+}
+
+.categorie_form{
+    margin-bottom: 85px;
+}
+
+#containerCategory h3 {
+    font-family: 'AmericanaRegular';
+    color: var(--vertMoyen);
+    font-size: 22px;
+    margin-top: 182px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ------------ ADMIN AJOUTER CATEGORY (category.php/) - FIN ------------ */
+
+
+
+/* ------------ ADMIN AJOUTER EVENT (evenement.php/) - DEBUT ------------ */
+
+/* #containerEventForm {
+    width: 730px;
+    margin-top: 125px;
+} */
+
+#eventForm div,
+#userForm div{
+    margin-top: 0px;
+}
+
 .event_file{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2830,7 +2863,6 @@ input[type=file]::file-selector-button {
 .event_file label {
     margin-bottom: 0px;
 }
-/* ------------ ADMIN AJOUTER EVENT (evenement.php/) - DEBUT ------------ */
 
 /* ------------ ADMIN AJOUTER EVENT (evenement.php/) - FIN ------------ */
 

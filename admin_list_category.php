@@ -81,7 +81,7 @@
         <!-- --------- BTN - AJOUTER UN EVENEMENT ---------- -->
         <div class="container_btnAjouter">
             
-            <a href="" class="btn_ajouter"><p><i class="fa-light fa-plus"></i>Ajouter une catégorie</p></a>
+            <a href="./category.php" class="btn_ajouter"><p><i class="fa-light fa-plus"></i>Ajouter une catégorie</p></a>
         </div>
 
     </section>

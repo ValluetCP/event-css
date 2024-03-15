@@ -180,7 +180,7 @@
         <!-- --------- BTN - AJOUTER UN EVENEMENT ---------- -->
         <div class="container_btnAjouter">
             
-            <a href="" class="btn_ajouter"><p><i class="fa-light fa-plus"></i>Ajouter un utilisateur</p></a>
+            <a href="./addUser.php" class="btn_ajouter"><p><i class="fa-light fa-plus"></i>Ajouter un utilisateur</p></a>
         </div>
 
 
