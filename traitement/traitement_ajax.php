@@ -3,7 +3,7 @@
     // $listEvent = Event::findAllEvent();
     $currentDate = date('Y-m-d H:i:s'); // Date actuelle au format SQL (YYYY-MM-DD HH:MM:SS)
 
-    $tab = [];
+$tab = [];
 $tab['contenu'] = '';
 
 // Obtenir le chemin absolu vers le dossier img

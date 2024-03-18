@@ -61,7 +61,7 @@
     <!-- SECTION DU HAUT - IMAGE FIXE -->
     <section class="haut">
 
-        <div id="ImgHauteListBook" class="ImgHaute" style="background-image: url(./img/event_horizontal_yatch.jpg);">
+        <div id="ImgHauteListBook" class="ImgHaute" style="background-image: url(./img/event_flamant.jpg);">
         </div>
 
         <div class="titreListEvent">
