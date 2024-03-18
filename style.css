@@ -2874,49 +2874,123 @@ input[type=file]::file-selector-button {
 
 /* ------------ INSCRIPTION (info_user.php/) - DEBUT ------------ */
 
+.filAriane{
+    margin-bottom: 30px;
+    font-family: 'Karla', sans-serif;
+}
+
+.filAriane a{
+    text-decoration: none;
+}
+
 .profil_container{
     max-width: 1200px;
     margin: auto;
+    margin-top: 50px;
 }
 
-.profil_container p{
+.profilRole{
     text-transform: uppercase;
     font-family: 'Karla', sans-serif;
     color: var(--vertMoyen);
+    display: none;
 }
 
 .profil_container hr{
     margin-bottom: 30px;
+    display: none;
 }
 
 .profilUser{
     display: grid;
-    grid-template-columns: 400px auto;
+    grid-template-columns: 422px auto;
     gap: 100px;
+    margin-bottom: 100px;
 }
 
-.profilForm h1{
+.imgProfil{
+    border-radius: 35px;
+}
+
+.profilForm h1,
+.profilHistorique h2{
     font-family: 'AmericanaRegular';
     color: var(--vertMoyen);
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.profilForm h1{
+    margin-top: 20px;
+}
+
+.profilForm p,
+.profilHistorique p{
+    font-family: 'Karla', sans-serif;
+    color: var(--vertMoyen);
+    font-size: 20px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
+.user_form{
+    /* text-transform: uppercase; */
+    font-family: 'Karla', sans-serif;
+    font-weight: 200;
+    color: var(--vertFonce);
+    font-size: 17px;
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
 }
 
 .user_form input{
     width: 100%;
-    height: 20px;
+    height: 32px;
     border: none;
-    border-bottom: 1px solid var(--vertFonce);
+    border-bottom: 1px solid var(--vertNavTrait);
     /* margin-bottom: 28px; */
 }
 
-.user_form{
-    text-transform: uppercase;
+.user_form label {
+    width: 76px;
+}
+
+.btn_profil {
+    display: block;
+    text-align: end;
+    margin-top: 78px;
+}
+
+/* tableau réservation user */
+.table_profil{
+    width: 100%;
     font-family: 'Karla', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     color: var(--vertFonce);
-    font-size: 21px;
-    margin-bottom: 42px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.table_profil thead{
+    border-bottom: 1px solid var(--vertFonce);
+    text-align: left;
+    background-color: #E5E8E7;
+}
+
+.table_profil thead th{
+    padding: 20px;
+    
+}
+
+.table_profil tbody{
+    color: var(--vertMoyen);
+    background-color: #F6F7F6;
+}
+
+.table_profil tbody tr td{
+    padding: 20px;
+    border-bottom: 1px solid var(--vertNavMenu);
 }
 
 

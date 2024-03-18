@@ -2,7 +2,7 @@
 <html lang="fr-FR">
     <head>
         <meta charset="UTF-8">
-        <title>Connexion</title>
+        <title>Profil utilisateur</title>
         <meta name="description" content="Une phrase d’environ 170 caractères">
         <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,14 +15,19 @@
     <body>
         <!-- -------------------- PAGE PROFIL USER - début -------------------- -->
         <main class="profil_container">
-            <p>rôle admin / client</p>
+            <div class="filAriane">
+                <a href="./test_list_user.php">Liste des utilisateurs > </a>
+                <a href="">Profil utilisateur </a>
+            </div>
+            <p class="profilRole">rôle admin / client</p>
             <hr>
             <div class="profilUser">
                 <div class="imgProfil">
-                    <img src="./img/user_lea.jpg" alt="">
+                    <img src="./img/user_klara.jpg" alt="">
                 </div>
                 <div class="profilForm">
                     <h1>informations personnelles</h1>
+                    <p>profil utilisateur</p>
                     <!-- FORMULAIRE - PROFIL USER -->
                     <form id="userProfil" class="userForm" action="" method="post">
                         
@@ -47,12 +52,43 @@
                         </div>
     
                         <!-- BOUTON DE VALIDATION RESERVATION -->
-                        <div class="btn_flex">
+                        <div class="btn_flex btn_profil">
                             <!-- <button type="button" class="reserve  btnEvent btnEvent-3">Réserver</button> -->
                             <button onclick="window.location.href='#modalEvent'" type="button" class="btnEvent btnEvent-3">modifier</button>
                         </div>
                     </form>
                 </div>
+            </div>
+            <div class="profilHistorique">
+                <h2>Liste des réservations</h2>
+                <p>En cours & passée</p>
+                <table class="table_profil">
+                    <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Catégorie</th>
+                            <th>Nombre de place</th>
+                            <th>Date de réservation</th>
+                            <th>Date de l'événement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table_titre">calamard gourmand</td>
+                            <td class="table_category">gastronomie</td>
+                            <td>2</td>
+                            <td>18-09-2023</td>
+                            <td>20-09-2023</td>
+                        </tr>
+                        <tr>
+                            <td class="table_titre">pink flamingo</td>
+                            <td class="table_category">atelier</td>
+                            <td>3</td>
+                            <td>18-09-2023</td>
+                            <td>20-09-2023</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
         <footer>

@@ -102,7 +102,7 @@
                             <!-- bouton -->
                             <td>
                                 <p class="table_btn">
-                                    <a href="" id="table_btnTxt">Consulter</a>
+                                    <a href="./info_user.php" id="table_btnTxt">Consulter</a>
                                 </p>
                             </td>
                         </tr>
@@ -144,7 +144,7 @@
                             <!-- bouton -->
                             <td>
                                 <p class="table_btn">
-                                    <a href="" id="table_btnTxt">Consulter</a>
+                                    <a href="./info_user.php" id="table_btnTxt">Consulter</a>
                                 </p>
                             </td>
                         </tr>
